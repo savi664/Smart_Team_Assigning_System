@@ -4,6 +4,7 @@ import Service.PersonalityClassifier;
 import Service.TeamBuilder;
 import Exception.*;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
@@ -18,12 +19,12 @@ public class Main {
     private static List<Participant> allParticipants = null;
     private static TeamBuilder teamBuilder = null;
     private static List<Team> formedTeams = null;
-    private static int currentTeamSize = 6;
+    private static int currentTeamSize = 5;
 
     public static void main(String[] args) {
         while (true) {
             showActorMenu();
-            int choice = getUserInput("Choose (1=Participant, 2=Organizer, 3=Exit): ", 3);
+            int choice = getUserInput("Choose (1=Participant, 2=Organizer, 3=Exit): ",1, 3);
             if (choice == 3) {
                 System.out.println("Goodbye!");
                 break;
@@ -58,12 +59,11 @@ public class Main {
         while (true) {
             System.out.println("\n--- Participant Menu ---");
             System.out.println("1. Register (Take Survey)");
-            System.out.println("2. Withdraw");
-            System.out.println("3. Check My Team");
-            System.out.println("4. Update My Info");
-            System.out.println("5. Back");
-            int choice = getUserInput("Choose (1–5): ", 5);
-            if (choice == 5) {
+            System.out.println("2. Check My Team");
+            System.out.println("3. Update My Info");
+            System.out.println("4. Back");
+            int choice = getUserInput("Choose (1–4): ", 1, 4);
+            if (choice == 4) {
                 break;
             }
 
@@ -71,10 +71,8 @@ public class Main {
                 if (choice == 1) {
                     registerParticipant();
                 } else if (choice == 2) {
-                    withdrawParticipant();
-                } else if (choice == 3) {
                     checkMyTeam();
-                } else if (choice == 4) {
+                } else if (choice == 3) {
                     updateParticipantInfo();
                 }
             } catch (Exception e) {
@@ -99,7 +97,7 @@ public class Main {
         String name = getInput("Enter Name: ");
         String email = getValidEmail();
         String game = getInput("Enter Preferred Game: ");
-        int skill = getUserInput("Enter Skill Level (1–10): ", 10);
+        int skill = getUserInput("Enter Skill Level (1–10): ",1, 10);
         RoleType role = getValidRole();
 
         System.out.println("Starting personality survey...");
@@ -120,18 +118,6 @@ public class Main {
         csvHandler.addToCSV(participant);
         allParticipants = null;
         System.out.println("Registered and saved to CSV!");
-    }
-
-    private static void withdrawParticipant() throws IOException, InvalidSurveyDataException {
-        String id = getInput("Enter your ID to withdraw: ");
-        csvHandler.removeFromCSV(id);
-        allParticipants = null;
-
-        if (teamBuilder != null) {
-            teamBuilder.removeMemberFromTeams(id);
-            reformTeams();
-            formedTeams = teamBuilder.getTeams();
-        }
     }
 
     private static void checkMyTeam() {
@@ -173,7 +159,7 @@ public class Main {
         System.out.println("2. Preferred Game");
         System.out.println("3. Skill Level");
         System.out.println("4. Preferred Role");
-        int choice = getUserInput("Choose (1–4): ", 4);
+        int choice = getUserInput("Choose (1–4): ",1, 4);
 
         String attributeName = getAttributeName(choice);
         if (attributeName == null) {
@@ -233,7 +219,7 @@ public class Main {
         } else if (choice == 2) {
             return getInput("New Preferred Game: ");
         } else if (choice == 3) {
-            return getUserInput("New Skill Level (1–10): ", 10);
+            return getUserInput("New Skill Level (1–10): ",1, 10);
         } else if (choice == 4) {
             return getValidRole().name();
         }
@@ -263,7 +249,7 @@ public class Main {
             System.out.println("3. Remove Participant");
             System.out.println("4. Export Teams to CSV");
             System.out.println("5. Back");
-            int c = getUserInput("Choose (1–5): ", 5);
+            int c = getUserInput("Choose (1–5): ", 1, 5);
             if (c == 5) {
                 break;
             }
@@ -285,10 +271,20 @@ public class Main {
     }
 
     private static void formTeams() throws InvalidCSVFilePathException {
-        System.out.print("Enter CSV path (or press Enter for participants_sample.csv): ");
-        String path = scanner.nextLine().trim();
-        if (path.isEmpty()) {
-            throw new InvalidCSVFilePathException("Please enter a valid CSV filepath");
+        String path;
+        while (true) {
+            System.out.print("Enter CSV file path : ");
+            path = scanner.nextLine().trim();
+
+            try {
+                if (path.isEmpty()) {
+                    throw new InvalidCSVFilePathException("Please enter a valid CSV filepath");
+                }
+                break;
+
+            } catch (InvalidCSVFilePathException e) {
+                System.out.println(e.getMessage());
+            }
         }
 
         System.out.println("\nTeam Size Configuration:");
@@ -296,7 +292,7 @@ public class Main {
         System.out.println("  - Maximum: 10 members");
         System.out.println("  - Current default: " + currentTeamSize);
 
-        int teamSize = getUserInput("Enter desired team size (2-10, or 0 to use default): ", 10, true);
+        int teamSize = getUserInput("Enter desired team size (3-10, or 0 to use default): ",3, 10, true);
         if (teamSize == 0) {
             teamSize = currentTeamSize;
             System.out.println("Using default team size: " + teamSize);
@@ -346,7 +342,7 @@ public class Main {
     }
 
     private static void removeParticipant() {
-        if (allParticipants == null || allParticipants.isEmpty()) {
+        if (teamBuilder == null || formedTeams==null) {
             System.out.println("No participants loaded.");
             return;
         }
@@ -382,9 +378,10 @@ public class Main {
             return;
         }
 
-        System.out.print("Save as (e.g. teams_output.csv): ");
+        System.out.print("Give the CSV file path where you want the teams pasted eg:file.csv: ");
         String path = scanner.nextLine().trim();
         if (path.isEmpty()) {
+            System.out.println("File path not provided using default teams_output.csv to store teams: ");
             path = "teams_output.csv";
         }
 
@@ -435,16 +432,15 @@ public class Main {
         }
     }
 
-    private static int getUserInput(String prompt, int max) {
-        return getUserInput(prompt, max, false);
+    private static int getUserInput(String prompt,int min, int max) {
+        return getUserInput(prompt,min, max, false);
     }
 
-    private static int getUserInput(String prompt, int max, boolean allowZero) {
+    private static int getUserInput(String prompt, int min,int max, boolean allowZero) {
         while (true) {
             System.out.print(prompt);
             try {
                 int value = Integer.parseInt(scanner.nextLine().trim());
-                int min = 1;
                 if (allowZero) {
                     min = 0;
                 }

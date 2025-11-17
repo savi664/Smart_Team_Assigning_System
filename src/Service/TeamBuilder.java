@@ -5,6 +5,7 @@ import Exception.SkillLevelOutOfBoundsException;
 
 import java.util.*;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class TeamBuilder {
     private final List<Participant> participantPool;
@@ -240,19 +241,6 @@ public class TeamBuilder {
         });
     }
 
-    public void removeMemberFromTeams(String participantId) {
-        List<Team> allTeams = getTeams();
-        for (Team team : allTeams) {
-            Participant participant = team.containsParticipant(participantId);
-            if (participant != null) {
-                team.removeMember(participant);
-                System.out.println("Removed " + participant.getName() + " from Team " + team.getTeam_id());
-                return;
-            }
-        }
-        System.out.println("Participant ID " + participantId + " not found.");
-    }
-
     public void updateParticipantAttribute(Participant participant, String attributeName, Object newValue)
             throws SkillLevelOutOfBoundsException {
 
@@ -345,7 +333,6 @@ public class TeamBuilder {
         if (currentSize != teamSize) {
             violationList.add("Incomplete team (" + currentSize + "/" + teamSize + ")");
         }
-
         // Check for too many players from same game
         Map<String, Integer> gameCount = new HashMap<>();
         for (Participant participant : members) {
