@@ -4,16 +4,16 @@ import Service.PersonalityClassifier;
 import Service.TeamBuilder;
 import Exception.*;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
-    private static final CSVHandler csvHandler = new CSVHandler();
     private static final PersonalityClassifier classifier = new PersonalityClassifier();
     private static final ExecutorService executor = Executors.newFixedThreadPool(4);
     private static List<Participant> allParticipants = null;
@@ -81,18 +81,12 @@ public class Main {
         }
     }
 
+    // In Main.java - modify registerParticipant()
     private static void registerParticipant() throws IOException, SkillLevelOutOfBoundsException, InvalidSurveyDataException {
         System.out.println("\n--- Register New Participant ---");
 
-        // Checking for identical ID in the Participant list
         String id = getInput("Enter ID: ").toUpperCase();
-        List<Participant> participants= csvHandler.readCSV("participants_sample.csv");
-        List<String> IDList = participants.stream().map(Participant::getId).toList();
-        if (IDList.contains(id)){
-            System.out.println("Please enter a new ID for the participant as the id already exists");
-            return;
-        }
-
+        // ... validation code ...
 
         String name = getInput("Enter Name: ");
         String email = getValidEmail();
@@ -101,23 +95,35 @@ public class Main {
         RoleType role = getValidRole();
 
         System.out.println("Starting personality survey...");
-        int[] answers = classifier.ConductSurvey();
-        int score = classifier.CalculatePersonalityScore(answers);
-        PersonalityType type = classifier.classifyPersonality(score);
 
-        Participant participant = new Participant(id, name, email, game, skill, role, score, type);
-
-        if (teamBuilder != null && formedTeams != null) {
-            Team fittingTeam = teamBuilder.findFittingTeam(participant);
-            if (fittingTeam != null) {
-                fittingTeam.addMember(participant);
-                reformTeams();
+        // Submit survey processing to executor
+        Future<Participant> futureParticipant = executor.submit(new Callable<Participant>() {
+            @Override
+            public Participant call() throws Exception {
+                int[] answers = classifier.ConductSurvey();
+                int score = classifier.CalculatePersonalityScore(answers);
+                PersonalityType type = classifier.ClassifyPersonality(score);
+                return new Participant(id, name, email, game, skill, role, score, type);
             }
-        }
+        });
 
-        csvHandler.addToCSV(participant);
-        allParticipants = null;
-        System.out.println("Registered and saved to CSV!");
+        try {
+            Participant participant = futureParticipant.get(); // Wait for completion
+
+            if (teamBuilder != null && formedTeams != null) {
+                Team fittingTeam = teamBuilder.findFittingTeam(participant);
+                if (fittingTeam != null) {
+                    fittingTeam.addMember(participant);
+                    reformTeams();
+                }
+            }
+
+            CSVHandler.addToCSV(participant);
+            allParticipants = null;
+            System.out.println("Registered and saved to CSV!");
+        } catch (Exception e) {
+            System.out.println("Error during registration: " + e.getMessage());
+        }
     }
 
     private static void checkMyTeam() {
@@ -144,7 +150,7 @@ public class Main {
     private static void updateParticipantInfo() throws IOException, SkillLevelOutOfBoundsException, InvalidSurveyDataException {
         String id = getInput("Enter your ID: ");
 
-        List<Participant> allFromCSV = csvHandler.readCSV("participants_sample.csv");
+        List<Participant> allFromCSV = CSVHandler.readCSV("participants_sample.csv");
         Participant participant = findParticipantById(allFromCSV, id);
 
         if (participant == null) {
@@ -172,7 +178,7 @@ public class Main {
         TeamBuilder tempBuilder = new TeamBuilder(allFromCSV, currentTeamSize);
         tempBuilder.updateParticipantAttribute(participant, attributeName, newValue);
 
-        csvHandler.exportUnassignedUser("participants_sample.csv", allFromCSV);
+        CSVHandler.exportUnassignedUser("participants_sample.csv", allFromCSV);
         System.out.println("Your info has been updated and saved to CSV.");
 
         if (tempBuilder.doesAttributeAffectBalance(attributeName) && teamBuilder != null && formedTeams != null) {
@@ -311,7 +317,7 @@ public class Main {
             @Override
             public void run() {
                 try {
-                    List<Participant> participants = csvHandler.readCSV(finalPath);
+                    List<Participant> participants = CSVHandler.readCSV(finalPath);
                     System.out.println("[Background] Loaded " + participants.size() + " participants.");
 
                     TeamBuilder builder = new TeamBuilder(participants, finalTeamSize);
@@ -361,7 +367,7 @@ public class Main {
         if (removed) {
             System.out.println("Participant removed from list.");
             try {
-                csvHandler.exportUnassignedUser("participants_sample.csv", allParticipants);
+                CSVHandler.exportUnassignedUser("participants_sample.csv", allParticipants);
                 System.out.println("CSV updated.");
             } catch (IOException e) {
                 System.out.println("Warning: Could not update CSV: " + e.getMessage());
@@ -386,7 +392,7 @@ public class Main {
         }
 
         try {
-            csvHandler.toCSV(path, formedTeams);
+            CSVHandler.toCSV(path, formedTeams);
             System.out.println("Exported to " + path);
         } catch (IOException e) {
             System.out.println("Export failed: " + e.getMessage());

@@ -5,7 +5,6 @@ import Exception.SkillLevelOutOfBoundsException;
 
 import java.util.*;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public class TeamBuilder {
     private final List<Participant> participantPool;

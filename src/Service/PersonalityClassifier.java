@@ -12,7 +12,7 @@ public class PersonalityClassifier {
         return Arrays.stream(scores).sum() * 4; // Maps 5–25 to 20–100
     }
 
-    public PersonalityType classifyPersonality(int score) {
+    public PersonalityType ClassifyPersonality(int score) {
         if (score >= 80) return PersonalityType.LEADER; // Adjusted from 90
         else if (score >= 60) return PersonalityType.BALANCED; // Adjusted from 70
         else if (score >= 40) return PersonalityType.THINKER; // Adjusted from 50

@@ -40,7 +40,6 @@ public class Team {
     }
 
     public double CalculateAvgSkill() {
-        if (participantList.isEmpty()) return 0.0;
         return participantList.stream()
                 .mapToInt(Participant::getSkillLevel)
                 .average()

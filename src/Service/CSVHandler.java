@@ -16,7 +16,11 @@ public class CSVHandler {
      * Reads participants from a CSV file (input format: no TeamID)
      * Header is skipped if present.
      */
-    public List<Participant> readCSV(String path) throws IOException, InvalidSurveyDataException {
+    private CSVHandler(){
+
+    }
+
+    public static List<Participant> readCSV(String path) throws IOException, InvalidSurveyDataException {
         BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
         List<Participant> participantList = new ArrayList<>();
 
@@ -55,7 +59,7 @@ public class CSVHandler {
     }
 
 
-    public void toCSV(String path, List<Team> teams) throws IOException {
+    public static void toCSV(String path, List<Team> teams) throws IOException {
         if (teams == null || teams.isEmpty()) {
             throw new IllegalArgumentException("No teams to export.");
         }
@@ -99,7 +103,7 @@ public class CSVHandler {
         }
     }
 
-    public void exportUnassignedUser(String path, List<Participant> participants) throws IOException {
+    public static void exportUnassignedUser(String path, List<Participant> participants) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(path))) {
             writer.write("ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType");
             writer.newLine();
@@ -113,7 +117,7 @@ public class CSVHandler {
     /**
      * Adds a new participant to the original participant CSV (append mode)
      */
-    public void addToCSV(Participant p) throws IOException {
+    public static void addToCSV(Participant p) throws IOException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("participants_sample.csv", true))) {
             writer.write(String.join(",",
                     escapeCSV(p.getId()),
@@ -129,7 +133,7 @@ public class CSVHandler {
         }
     }
 
-    private void writeParticipantWithTeam(BufferedWriter writer, int teamId, Participant p) throws IOException {
+    private static void writeParticipantWithTeam(BufferedWriter writer, int teamId, Participant p) throws IOException {
         writer.write(String.join(",",
                 String.valueOf(teamId),
                 escapeCSV(p.getId()),
@@ -144,7 +148,7 @@ public class CSVHandler {
         writer.newLine();
     }
 
-    private void writeParticipantNoTeam(BufferedWriter writer, Participant p) throws IOException {
+    private static void writeParticipantNoTeam(BufferedWriter writer, Participant p) throws IOException {
         writer.write(String.join(",",
                 escapeCSV(p.getId()),
                 escapeCSV(p.getName()),
@@ -158,7 +162,7 @@ public class CSVHandler {
         writer.newLine();
     }
 
-    private String escapeCSV(String value) {
+    private static String escapeCSV(String value) {
         if (value == null) return "";
         if (value.contains(",") || value.contains("\"") || value.contains("\n")) {
             value = value.replace("\"", "\"\"");
