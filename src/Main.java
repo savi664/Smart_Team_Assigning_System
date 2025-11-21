@@ -36,12 +36,7 @@ public class Main {
             }
         }
         scanner.close();
-        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
-            @Override
-            public void run() {
-                executor.shutdownNow();
-            }
-        }));
+        Runtime.getRuntime().addShutdownHook(new Thread(executor::shutdownNow));
     }
 
     // ============================= ACTOR MENU =============================
@@ -97,24 +92,20 @@ public class Main {
         System.out.println("Starting personality survey...");
 
         // Submit survey processing to executor
-        Future<Participant> futureParticipant = executor.submit(new Callable<Participant>() {
-            @Override
-            public Participant call() throws Exception {
-                int[] answers = classifier.ConductSurvey();
-                int score = classifier.CalculatePersonalityScore(answers);
-                PersonalityType type = classifier.ClassifyPersonality(score);
-                return new Participant(id, name, email, game, skill, role, score, type);
-            }
+        Future<Participant> futureParticipant = executor.submit(() -> {
+            int[] answers = classifier.ConductSurvey();
+            int score = classifier.CalculatePersonalityScore(answers);
+            PersonalityType type = classifier.ClassifyPersonality(score);
+            return new Participant(id, name, email, game, skill, role, score, type);
         });
 
         try {
             Participant participant = futureParticipant.get(); // Wait for completion
 
             if (teamBuilder != null && formedTeams != null) {
-                Team fittingTeam = teamBuilder.findFittingTeam(participant);
+                Team fittingTeam = teamBuilder.findSuitableTeam(participant);
                 if (fittingTeam != null) {
                     fittingTeam.addMember(participant);
-                    reformTeams();
                 }
             }
 
@@ -276,7 +267,7 @@ public class Main {
         }
     }
 
-    private static void formTeams() throws InvalidCSVFilePathException {
+    private static void formTeams() {
         String path;
         while (true) {
             System.out.print("Enter CSV file path : ");
@@ -313,28 +304,25 @@ public class Main {
         final String finalPath = path;
         final int finalTeamSize = teamSize;
 
-        executor.submit(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    List<Participant> participants = CSVHandler.readCSV(finalPath);
-                    System.out.println("[Background] Loaded " + participants.size() + " participants.");
+        executor.submit(() -> {
+            try {
+                List<Participant> participants = CSVHandler.readCSV(finalPath);
+                System.out.println("[Background] Loaded " + participants.size() + " participants.");
 
-                    TeamBuilder builder = new TeamBuilder(participants, finalTeamSize);
-                    List<Team> teams = builder.formTeams();
+                TeamBuilder builder = new TeamBuilder(participants, finalTeamSize);
+                List<Team> teams = builder.formTeams();
 
-                    synchronized (Main.class) {
-                        allParticipants = participants;
-                        teamBuilder = builder;
-                        formedTeams = teams;
-                    }
-
-                    System.out.println("[Background] Teams formed! " + teams.size() + " team(s) with size " + finalTeamSize + ".");
-                    System.out.println(">>> TEAMS ARE READY! Use 'View Teams' to see them. <<<");
-                } catch (Exception e) {
-                    System.err.println("[Background] Error: " + e.getMessage());
-                    e.printStackTrace();
+                synchronized (Main.class) {
+                    allParticipants = participants;
+                    teamBuilder = builder;
+                    formedTeams = teams;
                 }
+
+                System.out.println("[Background] Teams formed! " + teams.size() + " team(s) with size " + finalTeamSize + ".");
+                System.out.println(">>> TEAMS ARE READY! select 'View Teams' to see them. <<<");
+            } catch (Exception e) {
+                System.err.println("Error: " + e.getMessage());
+                e.printStackTrace();
             }
         });
     }
@@ -344,7 +332,7 @@ public class Main {
             System.out.println("Teams not formed yet. Choose 'Form Teams' first.");
             return;
         }
-        teamBuilder.printTeams();
+        teamBuilder.printAllTeams();
     }
 
     private static void removeParticipant() {
@@ -418,11 +406,14 @@ public class Main {
 
     private static String getValidEmail() {
         while (true) {
-            String email = getInput("Enter Email: ");
-            if (email.matches("^[\\w.-]+@[\\w.-]+\\.\\w{2,}$")) {
+            String email = getInput("Enter Email: ").trim();
+
+            // Accept ONLY @university.edu
+            if (email.matches("^[\\w.-]+@university\\.edu$")) {
                 return email;
             }
-            System.out.println("Invalid email format.");
+
+            System.out.println("Invalid email. Only @university.edu addresses are allowed.");
         }
     }
 
