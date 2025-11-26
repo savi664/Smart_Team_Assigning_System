@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Team {
-     private Integer team_id;
-     private final List<Participant> participantList;
+    private Integer team_id;
+    private final List<Participant> participantList;
 
     public Team(int teamId) {
         this.team_id = teamId;

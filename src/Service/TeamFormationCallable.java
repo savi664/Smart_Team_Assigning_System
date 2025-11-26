@@ -7,7 +7,7 @@ import Utility.Logger;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-public class TeamFormationCallable implements Callable<List<Team>> {
+public class TeamFormationCallable implements Callable<TeamBuilder> {
 
     private final List<Participant> participants;
     private final int teamSize;
@@ -18,7 +18,7 @@ public class TeamFormationCallable implements Callable<List<Team>> {
     }
 
     @Override
-    public List<Team> call() throws Exception {
+    public TeamBuilder call() throws Exception {
         Logger.info("TeamFormationCallable: Starting team formation for " + participants.size() +
                 " participants with team size: " + teamSize);
 
@@ -29,7 +29,7 @@ public class TeamFormationCallable implements Callable<List<Team>> {
             Logger.info("TeamFormationCallable: Teams formed successfully - " + teams.size() + " team(s)");
             Logger.debug("TeamFormationCallable: Team formation completed");
 
-            return teams;
+            return builder;  // Return the builder instead of just the teams
         } catch (IllegalArgumentException e) {
             Logger.error("TeamFormationCallable: IllegalArgumentException: " + e.getMessage());
             throw e;

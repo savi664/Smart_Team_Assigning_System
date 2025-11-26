@@ -1,4 +1,3 @@
-
 import Model.*;
 import Service.CSVHandler;
 import Service.PersonalityClassifier;
@@ -92,11 +91,16 @@ public class Main {
         }
     }
 
-    private static void registerParticipant() throws IOException, SkillLevelOutOfBoundsException, InvalidSurveyDataException {
+    private static void registerParticipant() throws IOException, InvalidSurveyDataException {
         Logger.info("Started new participant registration");
         System.out.println("\n--- Register New Participant ---");
 
         String id = getInput("Enter ID: ").toUpperCase();
+        if(containsID(id)){
+            Logger.error("ID already exists!");
+            System.out.println("Please re-enter ID as the ID you have entered belongs to another person");
+            return;
+        }
         String name = getInput("Enter Name: ");
         String email = getValidEmail();
         String game = getInput("Enter Preferred Game: ");
@@ -130,6 +134,15 @@ public class Main {
             Logger.error("Registration failed: " + e.getMessage());
             System.out.println("Error during registration: " + e.getMessage());
         }
+    }
+
+    private static boolean containsID(String id) throws InvalidSurveyDataException, IOException {
+
+        //Get all the participants in a List
+        List<Participant> participants = CSVHandler.readCSV("participants_sample.csv");
+
+        // return if the entered participant is there ot not
+        return participants.stream().anyMatch(participant -> participant.getId().equals(id));
     }
 
     private static void checkMyTeam() {
@@ -289,19 +302,22 @@ public class Main {
                 List<Participant> participants = futureParticipants.get();
                 Logger.info("File read completed, now forming teams");
 
-                // Create TeamFormationCallable
+                // Create TeamFormationCallable - now returns TeamBuilder
                 TeamFormationCallable teamFormationCallable = new TeamFormationCallable(participants, finalTeamSize);
-                List<Team> teams = teamFormationCallable.call();
+                TeamBuilder builder = teamFormationCallable.call();  // Get the TeamBuilder
+
+                // Get the formed teams from the builder
+                List<Team> teams = builder.getAllTeams();
 
                 // Update global state
                 synchronized (Main.class) {
                     allParticipants = participants;
-                    teamBuilder = new TeamBuilder(participants, finalTeamSize);
                     formedTeams = teams;
+                    teamBuilder = builder;  // Store the builder that has already formed teams
                 }
 
                 Logger.info("Team formation process completed successfully");
-                System.out.println(">>> TEAMS ARE READY! select 'View Teams' to see them. <<<");
+                System.out.println("\n>>> TEAMS ARE READY! Select 'View Teams' to see them. <<<\n");
             } catch (Exception e) {
                 Logger.error("Team formation process failed: " + e.getMessage());
                 System.err.println("Error: " + e.getMessage());
