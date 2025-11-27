@@ -20,6 +20,17 @@ public class CSVHandler {
 
     }
 
+
+    public static boolean containsID(String id) throws InvalidSurveyDataException, IOException {
+
+        //Get all the participants in a List
+        List<Participant> participants = CSVHandler.readCSV("participants_sample.csv");
+
+        // return if the entered participant is there ot not
+        return participants.stream().anyMatch(participant -> participant.getId().equals(id));
+    }
+
+
     public static List<Participant> readCSV(String path) throws IOException, InvalidSurveyDataException {
         BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
         List<Participant> participantList = new ArrayList<>();
@@ -170,4 +181,27 @@ public class CSVHandler {
         }
         return value;
     }
+
+    public static Participant parseLineToParticipant(String line) throws InvalidSurveyDataException {
+        String[] values = line.split(",", -1);
+        if (values.length < 8) throw new InvalidSurveyDataException("Invalid CSV row: " + line);
+
+        try {
+            String id = values[0].trim();
+            String name = values[1].trim();
+            String email = values[2].trim();
+            String preferredGame = values[3].trim();
+            int skillLevel = Integer.parseInt(values[4].trim());
+            RoleType role = RoleType.valueOf(values[5].trim().toUpperCase());
+            int personalityScore = Integer.parseInt(values[6].trim());
+            PersonalityType personalityType = PersonalityType.valueOf(values[7].trim().toUpperCase());
+
+            return new Participant(id, name, email, preferredGame, skillLevel, role, personalityScore, personalityType);
+        } catch (NumberFormatException e) {
+            throw new InvalidSurveyDataException("Invalid number in row: " + line);
+        } catch (IllegalArgumentException e) {
+            throw new InvalidSurveyDataException("Invalid enum in row: " + line);
+        }
+    }
+
 }

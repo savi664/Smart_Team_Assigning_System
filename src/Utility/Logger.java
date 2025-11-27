@@ -9,22 +9,21 @@ import java.time.format.DateTimeFormatter;
 
 public class Logger {
     private static final String LOG_DIR = "logs";
+    private static final String LOG_FILE = "app.log";
+
     private static BufferedWriter fileWriter;
     private static boolean isInitialized = false;
 
     public static void initialize() {
         try {
-            // Create logs directory if it doesn't exist
+            // Create logs directory
             File logDir = new File(LOG_DIR);
             if (!logDir.exists()) {
                 logDir.mkdir();
             }
 
-            // Create log file with timestamp
-            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss"));
-            String logFileName = LOG_DIR + "/TeamBuilder_" + timestamp + ".log";
-
-            fileWriter = new BufferedWriter(new FileWriter(logFileName, true));
+            File logFile = new File(logDir, LOG_FILE);
+            fileWriter = new BufferedWriter(new FileWriter(logFile, true)); // append = true
             isInitialized = true;
 
             log("INFO", "========== TEAM BUILDER APPLICATION STARTED ==========");
@@ -37,7 +36,9 @@ public class Logger {
         if (!isInitialized) return;
 
         try {
-            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+            String timestamp = LocalDateTime.now()
+                    .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+
             String logMessage = "[" + timestamp + "] [" + level + "] " + message;
 
             fileWriter.write(logMessage);
@@ -48,21 +49,10 @@ public class Logger {
         }
     }
 
-    public static void info(String message) {
-        log("INFO", message);
-    }
-
-    public static void warning(String message) {
-        log("WARNING", message);
-    }
-
-    public static void error(String message) {
-        log("ERROR", message);
-    }
-
-    public static void debug(String message) {
-        log("DEBUG", message);
-    }
+    public static void info(String message) { log("INFO", message); }
+    public static void warning(String message) { log("WARNING", message); }
+    public static void error(String message) { log("ERROR", message); }
+    public static void debug(String message) { log("DEBUG", message); }
 
     public static void close() {
         try {

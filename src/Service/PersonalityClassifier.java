@@ -8,8 +8,9 @@ import java.util.Scanner;
 
 public class PersonalityClassifier {
     Scanner scanner = new Scanner(System.in);
-    public int CalculatePersonalityScore(int[] scores) {
-        return Arrays.stream(scores).sum() * 4; // Maps 5–25 to 20–100
+    public int CalculatePersonalityScore() throws InvalidSurveyDataException {
+        int[] answers = ConductSurvey();
+        return Arrays.stream(answers).sum() * 4; // Maps 5–25 to 20–100
     }
 
     public PersonalityType ClassifyPersonality(int score) {
@@ -19,7 +20,7 @@ public class PersonalityClassifier {
         else return PersonalityType.SOCIALIZER;
     }
 
-    public int[] ConductSurvey() throws InvalidSurveyDataException {
+    private int[] ConductSurvey() throws InvalidSurveyDataException {
         int[] answers = new int[5];
         String[] questions= {
                 "Q1: I enjoy taking the lead and guiding others during group activities.",

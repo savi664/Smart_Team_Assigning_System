@@ -4,6 +4,7 @@ import Model.*;
 import Exception.SkillLevelOutOfBoundsException;
 
 import java.util.*;
+import java.util.concurrent.*;
 
 public class TeamBuilder {
 
@@ -12,6 +13,8 @@ public class TeamBuilder {
     private final List<Team> overflowTeams = new ArrayList<>();
     private final int targetTeamSize;
     private int nextTeamId = 1;
+    private final ExecutorService executor;
+    private final boolean useParallel = true;
 
     // Rules (easy to read)
     private static final int MAX_SAME_GAME = 2;
@@ -20,7 +23,13 @@ public class TeamBuilder {
     private static final int MAX_SOCIALIZERS = 1;
     private static final int MIN_DIFFERENT_ROLES = 3;
 
+    // Constructor for sequential mode (default)
     public TeamBuilder(List<Participant> participants, int teamSize) {
+        this(participants, teamSize, null);
+    }
+
+    // Constructor for parallel mode
+    public TeamBuilder(List<Participant> participants, int teamSize, ExecutorService executor) {
         if (participants == null || participants.isEmpty()) {
             throw new IllegalArgumentException("No participants given!");
         }
@@ -29,6 +38,7 @@ public class TeamBuilder {
         }
         this.allParticipants = new ArrayList<>(participants);
         this.targetTeamSize = teamSize;
+        this.executor = executor;
     }
 
     public List<Team> formTeams() {
@@ -104,6 +114,17 @@ public class TeamBuilder {
     }
 
     private Participant findBestPlayer(List<Participant> team, List<Participant> candidates) {
+        // Use parallel evaluation if enabled and candidate pool is large enough
+        if (useParallel && candidates.size() >= 50) {
+            return findBestPlayerParallel(team, candidates);
+        }
+        return findBestPlayerSequential(team, candidates);
+    }
+
+    /**
+     * Sequential version - original implementation
+     */
+    private Participant findBestPlayerSequential(List<Participant> team, List<Participant> candidates) {
         Participant best = null;
         double bestScore = -1;
 
@@ -117,6 +138,66 @@ public class TeamBuilder {
             }
         }
         return best;
+    }
+
+    /**
+     * Parallel version - evaluates candidates in chunks across multiple threads
+     */
+    private Participant findBestPlayerParallel(List<Participant> team, List<Participant> candidates) {
+        try {
+            // Split candidates into chunks for parallel evaluation
+            int numThreads = Math.min(4, (candidates.size() + 24) / 25); // 1 thread per ~25 candidates
+            int chunkSize = (int) Math.ceil((double) candidates.size() / numThreads);
+
+            List<Future<ParticipantScore>> futures = new ArrayList<>();
+
+            // Submit parallel tasks to evaluate chunks
+            for (int i = 0; i < numThreads; i++) {
+                int start = i * chunkSize;
+                int end = Math.min((i + 1) * chunkSize, candidates.size());
+                List<Participant> chunk = new ArrayList<>(candidates.subList(start, end));
+
+                futures.add(executor.submit(() -> findBestInChunk(team, chunk)));
+            }
+
+            // Collect results and find overall best
+            Participant best = null;
+            double bestScore = -1;
+
+            for (Future<ParticipantScore> future : futures) {
+                ParticipantScore result = future.get(200, TimeUnit.MILLISECONDS);
+                if (result != null && result.score > bestScore) {
+                    bestScore = result.score;
+                    best = result.participant;
+                }
+            }
+
+            return best;
+
+        } catch (Exception e) {
+            // If parallel fails, fall back to sequential
+            return findBestPlayerSequential(team, candidates);
+        }
+    }
+
+    /**
+     * Finds best participant in a chunk of candidates (for parallel processing)
+     */
+    private ParticipantScore findBestInChunk(List<Participant> team, List<Participant> chunk) {
+        Participant best = null;
+        double bestScore = -1;
+
+        for (Participant p : chunk) {
+            if (breaksRules(team, p)) continue;
+
+            double score = calculateScore(team, p);
+            if (score > bestScore) {
+                bestScore = score;
+                best = p;
+            }
+        }
+
+        return new ParticipantScore(best, bestScore);
     }
 
     private boolean breaksRules(List<Participant> team, Participant p) {
@@ -361,39 +442,16 @@ public class TeamBuilder {
         return newTeam;
     }
 
-    public void updateParticipantAttribute(Participant p, String attribiuteToChange, Object value) throws SkillLevelOutOfBoundsException {
-        attribiuteToChange = attribiuteToChange.toLowerCase().trim();
+    /**
+     * Helper class to hold participant and score for parallel processing
+     */
+    private static class ParticipantScore {
+        final Participant participant;
+        final double score;
 
-        if (attribiuteToChange.equals("email")) {
-            if (!(value instanceof String email)) throw new IllegalArgumentException("Email must be text");
-            if (!email.matches(".*@.*\\..*")) throw new IllegalArgumentException("Bad email");
-            p.setEmail(email);
-
-        } else if (attribiuteToChange.equals("preferred game")) {
-            if (!(value instanceof String)) throw new IllegalArgumentException("Game must be text");
-            p.setPreferredGame((String) value);
-
-        } else if (attribiuteToChange.equals("skill level")) {
-            if (!(value instanceof Integer)) throw new IllegalArgumentException("Skill must be number");
-            int skill = (Integer) value;
-            if (skill < 1 || skill > 10) throw new SkillLevelOutOfBoundsException("Skill 1-10 only");
-            p.setSkillLevel(skill);
-
-        } else if (attribiuteToChange.equals("preferred role")) {
-            if (!(value instanceof String)) throw new IllegalArgumentException("Role must be text");
-            String r = ((String) value).toUpperCase();
-            try {
-                p.setPreferredRole(RoleType.valueOf(r));
-            } catch (Exception e) {
-                throw new IllegalArgumentException("Bad role");
-            }
-        } else {
-            throw new IllegalArgumentException("Can't change " + attribiuteToChange);
+        ParticipantScore(Participant participant, double score) {
+            this.participant = participant;
+            this.score = score;
         }
-    }
-
-    public boolean doesAttributeAffectBalance(String attribute) {
-        String a = attribute.toLowerCase().trim();
-        return a.equals("preferred game") || a.equals("skill level") || a.equals("preferred role");
     }
 }

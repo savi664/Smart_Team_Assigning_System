@@ -1,10 +1,5 @@
 import Model.*;
-import Service.CSVHandler;
-import Service.PersonalityClassifier;
-import Service.TeamBuilder;
-import Service.SurveyCallable;
-import Service.FileReadCallable;
-import Service.TeamFormationCallable;
+import Service.*;
 import Exception.*;
 import Utility.Logger;
 
@@ -14,6 +9,7 @@ import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
@@ -30,7 +26,7 @@ public class Main {
 
         while (true) {
             showActorMenu();
-            int choice = getUserInput("Choose (1=Participant, 2=Organizer, 3=Exit): ", 1, 3);
+            int choice = InputValidator.getUserInput("Choose (1=Participant, 2=Organizer, 3=Exit): ", 1, 3);
             if (choice == 3) {
                 Logger.info("User selected Exit option");
                 System.out.println("Goodbye!");
@@ -65,10 +61,9 @@ public class Main {
             System.out.println("\n--- Participant Menu ---");
             System.out.println("1. Register (Take Survey)");
             System.out.println("2. Check My Team");
-            System.out.println("3. Update My Info");
-            System.out.println("4. Back");
-            int choice = getUserInput("Choose (1–4): ", 1, 4);
-            if (choice == 4) {
+            System.out.println("3. Back");
+            int choice = InputValidator.getUserInput("Choose (1–3): ", 1, 3);
+            if (choice == 3) {
                 Logger.info("User exited Participant Menu");
                 break;
             }
@@ -80,9 +75,6 @@ public class Main {
                 } else if (choice == 2) {
                     Logger.info("User selected: Check My Team");
                     checkMyTeam();
-                } else if (choice == 3) {
-                    Logger.info("User selected: Update My Info");
-                    updateParticipantInfo();
                 }
             } catch (Exception e) {
                 Logger.error("Error in participantMenu: " + e.getMessage());
@@ -95,27 +87,26 @@ public class Main {
         Logger.info("Started new participant registration");
         System.out.println("\n--- Register New Participant ---");
 
-        String id = getInput("Enter ID: ").toUpperCase();
-        if(containsID(id)){
+        String id = InputValidator.getInput("Enter ID: ").toUpperCase();
+        if(CSVHandler.containsID(id)){
             Logger.error("ID already exists!");
             System.out.println("Please re-enter ID as the ID you have entered belongs to another person");
             return;
         }
-        String name = getInput("Enter Name: ");
-        String email = getValidEmail();
-        String game = getInput("Enter Preferred Game: ");
-        int skill = getUserInput("Enter Skill Level (1–10): ", 1, 10);
-        RoleType role = getValidRole();
+        String name = InputValidator.getInput("Enter Name: ");
+        String email = InputValidator.getValidEmail();
+        String game = InputValidator.getInput("Enter Preferred Game: ");
+        int skillLevel = InputValidator.getUserInput("Enter Skill Level (1–10): ", 1, 10);
+        RoleType role = InputValidator.getValidRole();
 
         System.out.println("Starting personality survey...");
         Logger.info("Personality survey started for participant: " + id);
 
-        // Create SurveyCallable and submit to executor
-        SurveyCallable surveyCallable = new SurveyCallable(id, name, email, game, skill, role, classifier);
-        Future<Participant> futureParticipant = executor.submit(surveyCallable);
+        int score = classifier.CalculatePersonalityScore();
+        PersonalityType personalityType = classifier.ClassifyPersonality(score);
 
         try {
-            Participant participant = futureParticipant.get(); // Wait for completion
+            Participant participant = new Participant(id,name,email,game,skillLevel,role,score,personalityType); // Wait for completion
             Logger.info("Participant created: " + id + " (" + name + ")");
 
             if (teamBuilder != null && formedTeams != null) {
@@ -136,15 +127,6 @@ public class Main {
         }
     }
 
-    private static boolean containsID(String id) throws InvalidSurveyDataException, IOException {
-
-        //Get all the participants in a List
-        List<Participant> participants = CSVHandler.readCSV("participants_sample.csv");
-
-        // return if the entered participant is there ot not
-        return participants.stream().anyMatch(participant -> participant.getId().equals(id));
-    }
-
     private static void checkMyTeam() {
         Logger.info("User checking their team");
 
@@ -154,7 +136,7 @@ public class Main {
             return;
         }
 
-        String id = getInput("Enter your ID: ");
+        String id = InputValidator.getInput("Enter your ID: ");
         Team team = findTeamByParticipantId(id);
 
         if (team != null) {
@@ -170,51 +152,6 @@ public class Main {
         }
     }
 
-    private static void updateParticipantInfo() throws IOException, SkillLevelOutOfBoundsException, InvalidSurveyDataException {
-        String id = getInput("Enter your ID: ");
-        Logger.info("Update info requested for participant: " + id);
-
-        List<Participant> allFromCSV = CSVHandler.readCSV("participants_sample.csv");
-        Participant participant = findParticipantById(allFromCSV, id);
-
-        if (participant == null) {
-            Logger.warning("Participant not found: " + id);
-            System.out.println("Participant not found.");
-            return;
-        }
-
-        displayCurrentInfo(participant);
-
-        System.out.println("\nWhat do you want to change?");
-        System.out.println("1. Email");
-        System.out.println("2. Preferred Game");
-        System.out.println("3. Skill Level");
-        System.out.println("4. Preferred Role");
-        int choice = getUserInput("Choose (1–4): ", 1, 4);
-
-        String attributeName = getAttributeName(choice);
-        if (attributeName == null) {
-            System.out.println("Invalid choice.");
-            return;
-        }
-
-        Object newValue = getNewAttributeValue(choice);
-
-        TeamBuilder tempBuilder = new TeamBuilder(allFromCSV, currentTeamSize);
-        tempBuilder.updateParticipantAttribute(participant, attributeName, newValue);
-
-        CSVHandler.exportUnassignedUser("participants_sample.csv", allFromCSV);
-        Logger.info("Participant " + id + " info updated: " + attributeName);
-        System.out.println("Your info has been updated and saved to CSV.");
-
-        if (tempBuilder.doesAttributeAffectBalance(attributeName) && teamBuilder != null && formedTeams != null) {
-            System.out.println("Balance changed – re-forming teams...");
-            Logger.info("Attribute change affects team balance, reforming teams");
-            allParticipants = allFromCSV;
-            reformTeams();
-        }
-    }
-
     private static void organizerMenu() {
         Logger.info("Entered Organizer Menu");
 
@@ -225,7 +162,7 @@ public class Main {
             System.out.println("3. Remove Participant");
             System.out.println("4. Export Teams to CSV");
             System.out.println("5. Back");
-            int c = getUserInput("Choose (1–5): ", 1, 5);
+            int c = InputValidator.getUserInput("Choose (1–5): ", 1, 5);
             if (c == 5) {
                 Logger.info("User exited Organizer Menu");
                 break;
@@ -260,15 +197,8 @@ public class Main {
             System.out.print("Enter CSV file path : ");
             path = scanner.nextLine().trim();
 
-            try {
-                if (path.isEmpty()) {
-                    Logger.warning("Empty CSV file path provided");
-                    throw new InvalidCSVFilePathException("Please enter a valid CSV filepath");
-                }
-                break;
-            } catch (InvalidCSVFilePathException e) {
-                System.out.println(e.getMessage());
-            }
+            if (!path.isEmpty()) break;
+            System.out.println("Please enter a valid CSV filepath.");
         }
 
         System.out.println("\nTeam Size Configuration:");
@@ -276,14 +206,9 @@ public class Main {
         System.out.println("  - Maximum: 10 members");
         System.out.println("  - Current default: " + currentTeamSize);
 
-        int teamSize = getUserInput("Enter desired team size (3-10, or 0 to use default): ", 3, 10, true);
-        if (teamSize == 0) {
-            teamSize = currentTeamSize;
-            System.out.println("Using default team size: " + teamSize);
-        } else {
-            currentTeamSize = teamSize;
-            System.out.println("Team size set to: " + teamSize);
-        }
+        int teamSize = InputValidator.getUserInput("Enter desired team size (3-10, or 0 to use default): ", 3, 10, true);
+        if (teamSize == 0) teamSize = currentTeamSize;
+        else currentTeamSize = teamSize;
 
         System.out.println("\nReading CSV and forming teams in background...");
         System.out.println("Type anything to continue using the menu while it works.\n");
@@ -291,36 +216,29 @@ public class Main {
         final String finalPath = path;
         final int finalTeamSize = teamSize;
 
-        // Step 1: Create FileReadCallable to read CSV file
-        FileReadCallable fileReadCallable = new FileReadCallable(finalPath);
-        Future<List<Participant>> futureParticipants = executor.submit(fileReadCallable);
+        // Step 1: Submit CSV reading task
+        Future<List<Participant>> futureParticipants = executor.submit(new ParallelFileReadCallable(finalPath, executor, 4));
 
-        // Step 2: In a separate thread, wait for file read and then form teams
+        // Step 2: Submit team formation task that depends on CSV reading
         executor.submit(() -> {
             try {
-                // Wait for file reading to complete
-                List<Participant> participants = futureParticipants.get();
-                Logger.info("File read completed, now forming teams");
+                List<Participant> participants = futureParticipants.get(); // wait for CSV
+                ParallelTeamFormationCallable formationCallable = new ParallelTeamFormationCallable(participants, finalTeamSize, executor);
+                TeamBuilder builder = formationCallable.call();
 
-                // Create TeamFormationCallable - now returns TeamBuilder
-                TeamFormationCallable teamFormationCallable = new TeamFormationCallable(participants, finalTeamSize);
-                TeamBuilder builder = teamFormationCallable.call();  // Get the TeamBuilder
-
-                // Get the formed teams from the builder
-                List<Team> teams = builder.getAllTeams();
-
-                // Update global state
+                // Update shared variables safely
                 synchronized (Main.class) {
                     allParticipants = participants;
-                    formedTeams = teams;
-                    teamBuilder = builder;  // Store the builder that has already formed teams
+                    teamBuilder = builder; // Use the builder that already has formed teams
+                    formedTeams = builder.getAllTeams(); // Get the teams from the builder
                 }
 
-                Logger.info("Team formation process completed successfully");
-                System.out.println("\n>>> TEAMS ARE READY! Select 'View Teams' to see them. <<<\n");
+                Logger.info("Teams are ready!");
+                System.out.println("\n>>> TEAMS ARE READY! <<<\n");
+
             } catch (Exception e) {
-                Logger.error("Team formation process failed: " + e.getMessage());
-                System.err.println("Error: " + e.getMessage());
+                Logger.error("Error forming teams: " + e.getMessage());
+                System.out.println("Error forming teams: " + e.getMessage());
             }
         });
     }
@@ -328,12 +246,22 @@ public class Main {
     private static void viewTeams() {
         Logger.info("Viewing all teams");
 
-        if (teamBuilder == null || formedTeams == null) {
-            Logger.warning("Teams not formed yet");
-            System.out.println("Teams not formed yet. Choose 'Form Teams' first.");
-            return;
+        synchronized (Main.class) {
+            if (formedTeams == null) {
+                Logger.warning("Teams not formed yet or still forming");
+                System.out.println("Teams are not ready yet. Please wait until team formation completes.");
+                return;
+            }
+
+            if (teamBuilder == null || formedTeams.isEmpty()) {
+                Logger.warning("Teams are empty");
+                System.out.println("No teams available. Choose 'Form Teams' first.");
+                return;
+            }
+
+            // Print teams
+            teamBuilder.printAllTeams();
         }
-        teamBuilder.printAllTeams();
     }
 
     private static void removeParticipant() {
@@ -345,7 +273,7 @@ public class Main {
             return;
         }
 
-        String id = getInput("Enter Participant ID to remove: ");
+        String id = InputValidator.getInput("Enter Participant ID to remove: ");
         boolean removed = false;
 
         for (int i = 0; i < allParticipants.size(); i++) {
@@ -413,88 +341,11 @@ public class Main {
         System.out.println("Teams re-formed successfully! " + formedTeams.size() + " team(s).");
     }
 
-    private static Participant findParticipantById(List<Participant> participants, String id) {
-        for (Participant p : participants) {
-            if (p.getId().equalsIgnoreCase(id)) return p;
-        }
-        return null;
-    }
-
-    private static void displayCurrentInfo(Participant participant) {
-        System.out.println("\nCurrent Info:");
-        System.out.println("  Name: " + participant.getName());
-        System.out.println("  Email: " + participant.getEmail());
-        System.out.println("  Game: " + participant.getPreferredGame());
-        System.out.println("  Skill: " + participant.getSkillLevel());
-        System.out.println("  Role: " + participant.getPreferredRole());
-    }
-
-    private static String getAttributeName(int choice) {
-        if (choice == 1) return "email";
-        else if (choice == 2) return "preferred game";
-        else if (choice == 3) return "skill level";
-        else if (choice == 4) return "preferred role";
-        return null;
-    }
-
-    private static Object getNewAttributeValue(int choice) {
-        if (choice == 1) return getValidEmail();
-        else if (choice == 2) return getInput("New Preferred Game: ");
-        else if (choice == 3) return getUserInput("New Skill Level (1–10): ", 1, 10);
-        else if (choice == 4) return getValidRole().name();
-        return null;
-    }
-
     private static Team findTeamByParticipantId(String id) {
         if (formedTeams == null) return null;
         for (Team team : formedTeams) {
             if (team.containsParticipant(id) != null) return team;
         }
         return null;
-    }
-
-    private static String getInput(String prompt) {
-        System.out.print(prompt);
-        return scanner.nextLine().trim();
-    }
-
-    private static String getValidEmail() {
-        while (true) {
-            String email = getInput("Enter Email: ").trim();
-            if (email.matches("^[\\w.-]+@university\\.edu$")) {
-                return email;
-            }
-            System.out.println("Invalid email. Only @university.edu addresses are allowed.");
-        }
-    }
-
-    private static RoleType getValidRole() {
-        while (true) {
-            System.out.print("Enter Role (STRATEGIST, ATTACKER, DEFENDER, SUPPORTER, COORDINATOR): ");
-            try {
-                String input = scanner.nextLine().trim().toUpperCase();
-                return RoleType.valueOf(input);
-            } catch (IllegalArgumentException ex) {
-                System.out.println("Invalid role.");
-            }
-        }
-    }
-
-    private static int getUserInput(String prompt, int min, int max) {
-        return getUserInput(prompt, min, max, false);
-    }
-
-    private static int getUserInput(String prompt, int min, int max, boolean allowZero) {
-        while (true) {
-            System.out.print(prompt);
-            try {
-                int value = Integer.parseInt(scanner.nextLine().trim());
-                if (allowZero) min = 0;
-                if (value >= min && value <= max) return value;
-                System.out.println("Enter a number between " + min + " and " + max);
-            } catch (NumberFormatException e) {
-                System.out.println("Invalid input. Must be a number.");
-            }
-        }
     }
 }
