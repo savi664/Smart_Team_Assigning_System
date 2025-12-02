@@ -1,7 +1,6 @@
 package Service;
 
 import Model.*;
-import Exception.SkillLevelOutOfBoundsException;
 
 import java.util.*;
 import java.util.concurrent.*;
@@ -14,7 +13,6 @@ public class TeamBuilder {
     private final int targetTeamSize;
     private int nextTeamId = 1;
     private final ExecutorService executor;
-    private final boolean useParallel = true;
 
     // Rules (easy to read)
     private static final int MAX_SAME_GAME = 2;
@@ -22,6 +20,10 @@ public class TeamBuilder {
     private static final int MAX_THINKERS = 2;
     private static final int MAX_SOCIALIZERS = 1;
     private static final int MIN_DIFFERENT_ROLES = 3;
+
+    // Parallelization thresholds - only use threads when it actually helps
+    private static final int PARALLEL_THRESHOLD = 200;  // Changed from 50
+    private static final int MIN_CHUNK_SIZE = 50;       // Minimum candidates per thread
 
     // Constructor for sequential mode (default)
     public TeamBuilder(List<Participant> participants, int teamSize) {
@@ -113,9 +115,13 @@ public class TeamBuilder {
         return null;
     }
 
+    /**
+     * Decides whether to use sequential or parallel processing
+     * Only uses parallel when we have enough candidates to make it worthwhile
+     */
     private Participant findBestPlayer(List<Participant> team, List<Participant> candidates) {
-        // Use parallel evaluation if enabled and candidate pool is large enough
-        if (useParallel && candidates.size() >= 50) {
+        // Only use parallel if executor exists AND we have enough candidates
+        if (executor != null && candidates.size() >= PARALLEL_THRESHOLD) {
             return findBestPlayerParallel(team, candidates);
         }
         return findBestPlayerSequential(team, candidates);
@@ -142,13 +148,21 @@ public class TeamBuilder {
 
     /**
      * Parallel version - evaluates candidates in chunks across multiple threads
+     * Split work smartly: don't create more threads than we need
      */
     private Participant findBestPlayerParallel(List<Participant> team, List<Participant> candidates) {
         try {
-            // Split candidates into chunks for parallel evaluation
-            int numThreads = Math.min(4, (candidates.size() + 24) / 25); // 1 thread per ~25 candidates
-            int chunkSize = (int) Math.ceil((double) candidates.size() / numThreads);
+            // Figure out how many threads we actually need
+            int availableCores = Runtime.getRuntime().availableProcessors();
+            int maxThreads = candidates.size() / MIN_CHUNK_SIZE;  // Don't create tiny chunks
+            int numThreads = Math.min(availableCores, maxThreads);
 
+            // If we can't split meaningfully, just go sequential
+            if (numThreads <= 1) {
+                return findBestPlayerSequential(team, candidates);
+            }
+
+            int chunkSize = (int) Math.ceil((double) candidates.size() / numThreads);
             List<Future<ParticipantScore>> futures = new ArrayList<>();
 
             // Submit parallel tasks to evaluate chunks
@@ -165,7 +179,7 @@ public class TeamBuilder {
             double bestScore = -1;
 
             for (Future<ParticipantScore> future : futures) {
-                ParticipantScore result = future.get(200, TimeUnit.MILLISECONDS);
+                ParticipantScore result = future.get(2, TimeUnit.SECONDS);  // Increased timeout
                 if (result != null && result.score > bestScore) {
                     bestScore = result.score;
                     best = result.participant;
@@ -174,8 +188,12 @@ public class TeamBuilder {
 
             return best;
 
+        } catch (TimeoutException e) {
+            // If it takes too long, just fall back to sequential
+            System.err.println("Parallel processing timed out, using sequential instead");
+            return findBestPlayerSequential(team, candidates);
         } catch (Exception e) {
-            // If parallel fails, fall back to sequential
+            // If parallel fails for any reason, fall back to sequential
             return findBestPlayerSequential(team, candidates);
         }
     }
@@ -443,15 +461,8 @@ public class TeamBuilder {
     }
 
     /**
-     * Helper class to hold participant and score for parallel processing
-     */
-    private static class ParticipantScore {
-        final Participant participant;
-        final double score;
-
-        ParticipantScore(Participant participant, double score) {
-            this.participant = participant;
-            this.score = score;
-        }
+         * Helper class to hold participant and score for parallel processing
+         */
+        private record ParticipantScore(Participant participant, double score) {
     }
 }

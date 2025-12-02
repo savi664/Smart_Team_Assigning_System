@@ -19,6 +19,7 @@ public class Main {
     private static TeamBuilder teamBuilder = null;
     private static List<Team> formedTeams = null;
     private static int currentTeamSize = 5;
+    private static final CSVHandler csvHandler = new CSVHandler() ;
 
     public static void main(String[] args) {
         Logger.initialize();
@@ -88,7 +89,7 @@ public class Main {
         System.out.println("\n--- Register New Participant ---");
 
         String id = InputValidator.getInput("Enter ID: ").toUpperCase();
-        if(CSVHandler.containsID(id)){
+        if(csvHandler.containsID(id)){
             Logger.error("ID already exists!");
             System.out.println("Please re-enter ID as the ID you have entered belongs to another person");
             return;
@@ -117,7 +118,7 @@ public class Main {
                 }
             }
 
-            CSVHandler.addToCSV(participant);
+            csvHandler.addToCSV(participant);
             Logger.info("Participant " + id + " saved to CSV");
             allParticipants = null;
             System.out.println("Registered and saved to CSV!");
@@ -288,7 +289,7 @@ public class Main {
             Logger.info("Participant " + id + " removed successfully");
             System.out.println("Participant removed from list.");
             try {
-                CSVHandler.exportUnassignedUser("participants_sample.csv", allParticipants);
+                csvHandler.exportUnassignedUser("participants_sample.csv", allParticipants);
                 Logger.info("CSV updated after participant removal");
                 System.out.println("CSV updated.");
             } catch (IOException e) {
@@ -302,7 +303,7 @@ public class Main {
         }
     }
 
-    private static void exportTeams() {
+    private static void exportTeams() throws InvalidCSVFilePathException {
         Logger.info("Started team export process");
 
         if (formedTeams == null) {
@@ -316,15 +317,19 @@ public class Main {
         if (path.isEmpty()) {
             System.out.println("File path not provided using default teams_output.csv to store teams: ");
             path = "teams_output.csv";
+        }else if (path.endsWith(".csv")) {
+            throw new InvalidCSVFilePathException("CSV files must end with '.csv'.");
         }
 
         try {
-            CSVHandler.toCSV(path, formedTeams);
+            csvHandler.toCSV(path, formedTeams);
             Logger.info("Teams exported to: " + path);
             System.out.println("Exported to " + path);
         } catch (IOException e) {
             Logger.error("Export failed: " + e.getMessage());
             System.out.println("Export failed: " + e.getMessage());
+        } catch (InvalidCSVFilePathException e) {
+            System.out.println("Invalid CSV file path: " + e.getMessage()   );
         }
     }
 

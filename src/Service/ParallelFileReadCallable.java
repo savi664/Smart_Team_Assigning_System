@@ -1,7 +1,6 @@
 package Service;
 
 import Model.Participant;
-import Exception.InvalidSurveyDataException;
 import Utility.Logger;
 
 import java.io.File;
@@ -17,6 +16,7 @@ public class ParallelFileReadCallable implements Callable<List<Participant>> {
     private final String filePath;
     private final ExecutorService executor;
     private final int numThreads;
+    private final CSVHandler csvHandler = new CSVHandler()    ;
 
     public ParallelFileReadCallable(String filePath, ExecutorService executor, int numThreads) {
         this.filePath = filePath;
@@ -32,7 +32,7 @@ public class ParallelFileReadCallable implements Callable<List<Participant>> {
         if (allLines.size() <= 1) return new ArrayList<>(); // header only or empty
 
         // Remove header
-        allLines.remove(0);
+        allLines.removeFirst();
 
         int totalLines = allLines.size();
         int chunkSize = (int) Math.ceil((double) totalLines / numThreads);
@@ -47,7 +47,7 @@ public class ParallelFileReadCallable implements Callable<List<Participant>> {
             futures.add(executor.submit(() -> {
                 List<Participant> chunkParticipants = new ArrayList<>();
                 for (String line : subList) {
-                    chunkParticipants.add(CSVHandler.parseLineToParticipant(line));
+                    chunkParticipants.add(csvHandler.parseLineToParticipant(line));
                 }
                 return chunkParticipants;
             }));

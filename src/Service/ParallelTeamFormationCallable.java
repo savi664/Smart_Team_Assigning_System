@@ -18,7 +18,7 @@ public class ParallelTeamFormationCallable implements Callable<TeamBuilder> {
     }
 
     @Override
-    public TeamBuilder call() throws Exception {
+    public TeamBuilder call() {
         long startTime = System.currentTimeMillis();
         Logger.info("Starting team formation with " + participants.size() + " participants");
 

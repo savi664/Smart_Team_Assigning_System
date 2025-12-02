@@ -14,6 +14,10 @@ public class Logger {
     private static BufferedWriter fileWriter;
     private static boolean isInitialized = false;
 
+    private Logger() {
+
+    }
+
     public static void initialize() {
         try {
             // Create logs directory
