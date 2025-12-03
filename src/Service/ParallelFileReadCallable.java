@@ -1,5 +1,6 @@
 package Service;
 
+import Exception.InvalidSurveyDataException;
 import Model.Participant;
 import Utility.Logger;
 
@@ -16,7 +17,7 @@ public class ParallelFileReadCallable implements Callable<List<Participant>> {
     private final String filePath;
     private final ExecutorService executor;
     private final int numThreads;
-    private final CSVHandler csvHandler = new CSVHandler()    ;
+    private final CSVHandler csvHandler = new CSVHandler();
 
     public ParallelFileReadCallable(String filePath, ExecutorService executor, int numThreads) {
         this.filePath = filePath;
@@ -29,26 +30,37 @@ public class ParallelFileReadCallable implements Callable<List<Participant>> {
         Logger.info("ParallelFileReadCallable: Reading CSV in parallel from: " + filePath);
 
         List<String> allLines = Files.readAllLines(new File(filePath).toPath());
-        if (allLines.size() <= 1) return new ArrayList<>(); // header only or empty
+        if (allLines.size() <= 1) return new ArrayList<>();
 
-        // Remove header
-        allLines.removeFirst();
+        allLines.removeFirst(); // Remove header
 
         int totalLines = allLines.size();
         int chunkSize = (int) Math.ceil((double) totalLines / numThreads);
-
         List<Future<List<Participant>>> futures = new ArrayList<>();
 
+
+        long startTime = System.currentTimeMillis();
+        Logger.info("START: ParallelFileReadCallable with " + numThreads + " threads");
+
         for (int i = 0; i < numThreads; i++) {
+            int threadNum = i;
             int start = i * chunkSize;
             int end = Math.min((i + 1) * chunkSize, totalLines);
             List<String> subList = allLines.subList(start, end);
 
             futures.add(executor.submit(() -> {
+                Logger.info("Thread-" + threadNum + " processing lines " + start + " to " + end);
                 List<Participant> chunkParticipants = new ArrayList<>();
-                for (String line : subList) {
-                    chunkParticipants.add(csvHandler.parseLineToParticipant(line));
+                try {
+                    for (String line : subList) {
+                        chunkParticipants.add(csvHandler.parseLineToParticipant(line));
+                    }
+                } catch (InvalidSurveyDataException e) {
+                    // Print clear error message here
+                    Logger.error("CSV parsing error: " + e.getMessage());
+                    System.err.println("\nCSV parsing error: " + e.getMessage());
                 }
+                Logger.info("Thread-" + threadNum + " completed");
                 return chunkParticipants;
             }));
         }
@@ -59,7 +71,8 @@ public class ParallelFileReadCallable implements Callable<List<Participant>> {
             participants.addAll(f.get());
         }
 
-        Logger.info("ParallelFileReadCallable: Completed reading " + participants.size() + " participants");
+        long endTime = System.currentTimeMillis();
+        Logger.info("COMPLETED: CSV read in " + (endTime - startTime) + "ms");
         return participants;
     }
 }

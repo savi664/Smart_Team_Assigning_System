@@ -107,7 +107,7 @@ public class CSVHandler implements CSVService {
 
     @Override
     public Participant parseLineToParticipant(String line) throws InvalidSurveyDataException {
-        String[] values = line.split(",", -1);
+        String[] values = line.split(",");
         if (values.length < 8) {
             throw new InvalidSurveyDataException("Invalid CSV row (expected 8 columns): " + line);
         }

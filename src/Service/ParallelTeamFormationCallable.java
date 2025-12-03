@@ -22,16 +22,13 @@ public class ParallelTeamFormationCallable implements Callable<TeamBuilder> {
         long startTime = System.currentTimeMillis();
         Logger.info("Starting team formation with " + participants.size() + " participants");
 
-        // Pass executor to TeamBuilder for parallel processing
         TeamBuilder builder = new TeamBuilder(participants, teamSize, executor);
-        builder.formTeams();
+        builder.formTeams();  // ← This does the real work
 
-        long endTime = System.currentTimeMillis();
-        long totalTime = endTime - startTime;
-
+        long totalTime = System.currentTimeMillis() - startTime;
         Logger.info("Team formation completed in " + totalTime + "ms");
-        System.out.println("⚡ Formation time: " + totalTime + "ms");
+        System.out.println(">>> TEAMS FORMED IN " + totalTime + "ms <<<");
 
-        return builder;
+        return builder;  // ← RETURN THE ONE THAT HAS THE TEAMS, NOT A NEW ONE
     }
 }

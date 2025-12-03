@@ -160,7 +160,7 @@ public class Main {
             System.out.println("\n--- Organizer Menu ---");
             System.out.println("1. Form Teams");
             System.out.println("2. View Teams");
-            System.out.println("3. Remove Participant");
+            System.out.println("3. Remove Participant from Team");
             System.out.println("4. Export Teams to CSV");
             System.out.println("5. Back");
             int c = InputValidator.getUserInput("Choose (1–5): ", 1, 5);
@@ -199,7 +199,7 @@ public class Main {
             path = scanner.nextLine().trim();
 
             if (!path.isEmpty()) break;
-            System.out.println("Please enter a valid CSV filepath.");
+            System.out.println("File path empty, Please enter the CSV file path ");
         }
 
         System.out.println("\nTeam Size Configuration:");
@@ -207,39 +207,35 @@ public class Main {
         System.out.println("  - Maximum: 10 members");
         System.out.println("  - Current default: " + currentTeamSize);
 
-        int teamSize = InputValidator.getUserInput("Enter desired team size (3-10, or 0 to use default): ", 3, 10, true);
+        int teamSize = InputValidator.getUserInput("Enter desired team size (3-10, or 0 to use default): ", 3, 10, false);
         if (teamSize == 0) teamSize = currentTeamSize;
         else currentTeamSize = teamSize;
 
         System.out.println("\nReading CSV and forming teams in background...");
-        System.out.println("Type anything to continue using the menu while it works.\n");
 
         final String finalPath = path;
         final int finalTeamSize = teamSize;
 
-        // Step 1: Submit CSV reading task
         Future<List<Participant>> futureParticipants = executor.submit(new ParallelFileReadCallable(finalPath, executor, 4));
 
-        // Step 2: Submit team formation task that depends on CSV reading
         executor.submit(() -> {
             try {
-                List<Participant> participants = futureParticipants.get(); // wait for CSV
+                List<Participant> participants = futureParticipants.get();
                 ParallelTeamFormationCallable formationCallable = new ParallelTeamFormationCallable(participants, finalTeamSize, executor);
                 TeamBuilder builder = formationCallable.call();
 
-                // Update shared variables safely
                 synchronized (Main.class) {
                     allParticipants = participants;
-                    teamBuilder = builder; // Use the builder that already has formed teams
-                    formedTeams = builder.getAllTeams(); // Get the teams from the builder
+                    teamBuilder = builder;
+                    formedTeams = builder.getAllTeams();
                 }
 
                 Logger.info("Teams are ready!");
                 System.out.println("\n>>> TEAMS ARE READY! <<<\n");
 
             } catch (Exception e) {
-                Logger.error("Error forming teams: " + e.getMessage());
-                System.out.println("Error forming teams: " + e.getMessage());
+                // Error already printed by ParallelFileReadCallable
+                Logger.error("Team formation failed");
             }
         });
     }
@@ -269,8 +265,8 @@ public class Main {
         Logger.info("Started participant removal process");
 
         if (teamBuilder == null || formedTeams == null) {
-            Logger.warning("No participants loaded");
-            System.out.println("No participants loaded.");
+            Logger.warning("Teams are not formed yet");
+            System.out.println("Teams are not formed");
             return;
         }
 
@@ -317,7 +313,7 @@ public class Main {
         if (path.isEmpty()) {
             System.out.println("File path not provided using default teams_output.csv to store teams: ");
             path = "teams_output.csv";
-        }else if (path.endsWith(".csv")) {
+        }else if (!path.endsWith(".csv")) {
             throw new InvalidCSVFilePathException("CSV files must end with '.csv'.");
         }
 
