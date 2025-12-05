@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class InputValidator {
 
+    // Input validator class used to validate user inputs
     static Scanner scanner = new Scanner(System.in);
     public static String getInput(String prompt) {
         System.out.print(prompt);
@@ -15,6 +16,7 @@ public class InputValidator {
     public static String getValidEmail() {
         while (true) {
             String email = getInput("Enter Email: ").trim();
+            // Regex patter to validate the user email
             if (email.matches("^[\\w.-]+@university\\.edu$")) {
                 return email;
             }
