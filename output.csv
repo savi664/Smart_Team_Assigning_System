@@ -1,0 +1,200 @@
+
+# ==============================
+# TEAM 3 (Size: 5, Avg Skill: 5.00)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+3,P077,Participant_77,user77@university.edu,FIFA,2,ATTACKER,89,BALANCED
+3,P059,Participant_59,user59@university.edu,DOTA 2,4,SUPPORTER,79,BALANCED
+3,P055,Participant_55,user55@university.edu,Chess,8,COORDINATOR,90,LEADER
+3,P066,Participant_66,user66@university.edu,Chess,1,STRATEGIST,67,THINKER
+3,P081,Participant_81,user81@university.edu,FIFA,10,STRATEGIST,52,THINKER
+
+# ==============================
+# TEAM 5 (Size: 5, Avg Skill: 5.00)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+5,P046,Participant_46,user46@university.edu,CS:GO,5,STRATEGIST,96,LEADER
+5,P090,Participant_90,user90@university.edu,Chess,5,COORDINATOR,62,THINKER
+5,P084,Participant_84,user84@university.edu,FIFA,5,SUPPORTER,63,THINKER
+5,P002,Participant_2,user2@university.edu,FIFA,5,ATTACKER,80,BALANCED
+5,P098,Participant_98,user98@university.edu,CS:GO,5,DEFENDER,83,BALANCED
+
+# ==============================
+# TEAM 9 (Size: 5, Avg Skill: 5.20)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+9,P093,Participant_93,user93@university.edu,CS:GO,4,DEFENDER,51,THINKER
+9,P056,Participant_56,user56@university.edu,Basketball,4,STRATEGIST,86,BALANCED
+9,P032,Participant_32,user32@university.edu,DOTA 2,2,ATTACKER,86,BALANCED
+9,P073,Participant_73,user73@university.edu,DOTA 2,8,DEFENDER,100,LEADER
+9,P063,Participant_63,user63@university.edu,Chess,8,DEFENDER,60,THINKER
+
+# ==============================
+# TEAM 12 (Size: 5, Avg Skill: 5.20)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+12,P080,Participant_80,user80@university.edu,Basketball,1,COORDINATOR,82,BALANCED
+12,P061,Participant_61,user61@university.edu,CS:GO,7,STRATEGIST,98,LEADER
+12,P039,Participant_39,user39@university.edu,FIFA,5,SUPPORTER,66,THINKER
+12,P062,Participant_62,user62@university.edu,Basketball,6,ATTACKER,85,BALANCED
+12,P033,Participant_33,user33@university.edu,FIFA,7,DEFENDER,65,THINKER
+
+# ==============================
+# TEAM 16 (Size: 5, Avg Skill: 5.20)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+16,P068,Participant_68,user68@university.edu,Chess,1,DEFENDER,80,BALANCED
+16,P034,Participant_34,user34@university.edu,FIFA,7,SUPPORTER,91,LEADER
+16,P087,Participant_87,user87@university.edu,Basketball,4,ATTACKER,51,THINKER
+16,P021,Participant_21,user21@university.edu,FIFA,4,STRATEGIST,64,THINKER
+16,P047,Participant_47,user47@university.edu,DOTA 2,10,ATTACKER,78,BALANCED
+
+# ==============================
+# TEAM 2 (Size: 5, Avg Skill: 5.40)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+2,P1001,Savinu,user101@university.edu,valorant,3,STRATEGIST,80,BALANCED
+2,P095,Participant_95,user95@university.edu,CS:GO,2,COORDINATOR,84,BALANCED
+2,P037,Participant_37,user37@university.edu,DOTA 2,8,ATTACKER,100,LEADER
+2,P009,Participant_9,user9@university.edu,CS:GO,6,SUPPORTER,62,THINKER
+2,P075,Participant_75,user75@university.edu,Valorant,8,COORDINATOR,53,THINKER
+
+# ==============================
+# TEAM 17 (Size: 5, Avg Skill: 5.40)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+17,P022,Participant_22,user22@university.edu,Chess,9,ATTACKER,97,LEADER
+17,P051,Participant_51,user51@university.edu,FIFA,2,STRATEGIST,57,THINKER
+17,P030,Participant_30,user30@university.edu,CS:GO,4,COORDINATOR,54,THINKER
+17,P086,Participant_86,user86@university.edu,FIFA,9,STRATEGIST,89,BALANCED
+17,P020,Participant_20,user20@university.edu,Valorant,3,COORDINATOR,82,BALANCED
+
+# ==============================
+# TEAM 7 (Size: 5, Avg Skill: 5.40)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+7,P024,Participant_24,user24@university.edu,DOTA 2,7,SUPPORTER,63,THINKER
+7,P011,Participant_11,user11@university.edu,Basketball,8,STRATEGIST,84,BALANCED
+7,P035,Participant_35,user35@university.edu,Basketball,8,COORDINATOR,78,BALANCED
+7,P058,Participant_58,user58@university.edu,Valorant,3,DEFENDER,95,LEADER
+7,P038,Participant_38,user38@university.edu,Valorant,1,DEFENDER,78,BALANCED
+
+# ==============================
+# TEAM 14 (Size: 5, Avg Skill: 5.60)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+14,P072,Participant_72,user72@university.edu,DOTA 2,5,ATTACKER,61,THINKER
+14,P003,Participant_3,user3@university.edu,FIFA,4,DEFENDER,66,THINKER
+14,2,savinu,iwdhbxoasxhwb@university.edu,valorant,5,STRATEGIST,80,BALANCED
+14,P041,Participant_41,user41@university.edu,Basketball,5,STRATEGIST,70,BALANCED
+14,P040,Participant_40,user40@university.edu,Chess,9,COORDINATOR,100,LEADER
+
+# ==============================
+# TEAM 1 (Size: 5, Avg Skill: 5.60)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+1,P071,Participant_71,user71@university.edu,Chess,8,STRATEGIST,70,BALANCED
+1,P092,Participant_92,user92@university.edu,Basketball,7,ATTACKER,70,BALANCED
+1,P028,Participant_28,user28@university.edu,CS:GO,8,DEFENDER,90,LEADER
+1,P006,Participant_6,user6@university.edu,CS:GO,2,STRATEGIST,57,THINKER
+1,P012,Participant_12,user12@university.edu,DOTA 2,3,ATTACKER,63,THINKER
+
+# ==============================
+# TEAM 15 (Size: 5, Avg Skill: 5.60)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+15,P099,Participant_99,user99@university.edu,Valorant,3,SUPPORTER,66,THINKER
+15,P069,Participant_69,user69@university.edu,CS:GO,5,SUPPORTER,68,THINKER
+15,P050,Participant_50,user50@university.edu,Basketball,5,COORDINATOR,70,BALANCED
+15,P083,Participant_83,user83@university.edu,DOTA 2,10,DEFENDER,75,BALANCED
+15,P007,Participant_7,user7@university.edu,DOTA 2,5,ATTACKER,93,LEADER
+
+# ==============================
+# TEAM 4 (Size: 5, Avg Skill: 5.60)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+4,P089,Participant_89,user89@university.edu,Chess,6,SUPPORTER,75,BALANCED
+4,P049,Participant_49,user49@university.edu,Basketball,3,SUPPORTER,95,LEADER
+4,P054,Participant_54,user54@university.edu,Valorant,8,SUPPORTER,69,THINKER
+4,P015,Participant_15,user15@university.edu,DOTA 2,8,COORDINATOR,66,THINKER
+4,P074,Participant_74,user74@university.edu,FIFA,3,SUPPORTER,82,BALANCED
+
+# ==============================
+# TEAM 8 (Size: 5, Avg Skill: 5.80)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+8,P023,Participant_23,user23@university.edu,CS:GO,3,DEFENDER,87,BALANCED
+8,P025,Participant_25,user25@university.edu,FIFA,9,COORDINATOR,100,LEADER
+8,P057,Participant_57,user57@university.edu,CS:GO,7,ATTACKER,54,THINKER
+8,P045,Participant_45,user45@university.edu,Chess,2,COORDINATOR,68,THINKER
+8,P026,Participant_26,user26@university.edu,Chess,8,STRATEGIST,74,BALANCED
+
+# ==============================
+# TEAM 13 (Size: 5, Avg Skill: 5.80)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+13,P078,Participant_78,user78@university.edu,FIFA,6,DEFENDER,51,THINKER
+13,P005,Participant_5,user5@university.edu,CS:GO,9,COORDINATOR,82,BALANCED
+13,P008,Participant_8,user8@university.edu,Valorant,10,DEFENDER,81,BALANCED
+13,P067,Participant_67,user67@university.edu,Basketball,1,ATTACKER,92,LEADER
+13,P018,Participant_18,user18@university.edu,FIFA,3,DEFENDER,51,THINKER
+
+# ==============================
+# TEAM 11 (Size: 5, Avg Skill: 5.80)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+11,P036,Participant_36,user36@university.edu,Chess,9,STRATEGIST,65,THINKER
+11,P042,Participant_42,user42@university.edu,DOTA 2,7,ATTACKER,53,THINKER
+11,P053,Participant_53,user53@university.edu,DOTA 2,7,DEFENDER,71,BALANCED
+11,P014,Participant_14,user14@university.edu,FIFA,3,SUPPORTER,73,BALANCED
+11,P097,Participant_97,user97@university.edu,FIFA,3,ATTACKER,96,LEADER
+
+# ==============================
+# TEAM 6 (Size: 5, Avg Skill: 5.80)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+6,P096,Participant_96,user96@university.edu,DOTA 2,8,STRATEGIST,56,THINKER
+6,P017,Participant_17,user17@university.edu,CS:GO,10,ATTACKER,77,BALANCED
+6,P044,Participant_44,user44@university.edu,FIFA,6,SUPPORTER,71,BALANCED
+6,P070,Participant_70,user70@university.edu,Basketball,1,COORDINATOR,96,LEADER
+6,P060,Participant_60,user60@university.edu,CS:GO,4,COORDINATOR,57,THINKER
+
+# ==============================
+# TEAM 10 (Size: 5, Avg Skill: 6.00)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+10,P016,Participant_16,user16@university.edu,CS:GO,6,STRATEGIST,90,LEADER
+10,P027,Participant_27,user27@university.edu,Chess,6,ATTACKER,53,THINKER
+10,P048,Participant_48,user48@university.edu,Valorant,6,DEFENDER,65,THINKER
+10,P065,Participant_65,user65@university.edu,DOTA 2,7,COORDINATOR,77,BALANCED
+10,P029,Participant_29,user29@university.edu,Basketball,5,SUPPORTER,77,BALANCED
+
+# ==============================
+# TEAM 19 (Size: 5, Avg Skill: 4.00)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+19,P013,Participant_13,user13@university.edu,DOTA 2,4,DEFENDER,97,LEADER
+19,P079,Participant_79,user79@university.edu,Chess,5,SUPPORTER,97,LEADER
+19,P010,Participant_10,user10@university.edu,Valorant,5,COORDINATOR,96,LEADER
+19,P094,Participant_94,user94@university.edu,CS:GO,2,SUPPORTER,98,LEADER
+19,P004,Participant_4,user4@university.edu,Basketball,4,SUPPORTER,91,LEADER
+
+# ==============================
+# TEAM 20 (Size: 5, Avg Skill: 8.20)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+20,P031,Participant_31,user31@university.edu,Basketball,8,STRATEGIST,97,LEADER
+20,P076,Participant_76,user76@university.edu,FIFA,7,STRATEGIST,91,LEADER
+20,P085,Participant_85,user85@university.edu,Basketball,10,COORDINATOR,98,LEADER
+20,P100,Participant_100,user100@university.edu,CS:GO,7,COORDINATOR,97,LEADER
+20,P019,Participant_19,user19@university.edu,FIFA,9,SUPPORTER,95,LEADER
+
+# ==============================
+# TEAM 21 (Size: 5, Avg Skill: 4.80)
+# ==============================
+TeamID,ID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityScore,PersonalityType
+21,P064,Participant_64,user64@university.edu,CS:GO,6,SUPPORTER,92,LEADER
+21,P043,Participant_43,user43@university.edu,DOTA 2,2,DEFENDER,100,LEADER
+21,P082,Participant_82,user82@university.edu,Valorant,10,ATTACKER,97,LEADER
+21,P088,Participant_88,user88@university.edu,FIFA,4,DEFENDER,92,LEADER
+21,P052,Participant_52,user52@university.edu,FIFA,2,ATTACKER,99,LEADER

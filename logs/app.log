@@ -1,0 +1,2170 @@
+[2025-11-26 23:22:16] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-11-26 23:25:02] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-11-26 23:25:24] [ERROR] C:UserssavinuDesktopRGU_second_yearCM2601ProjectCM2601_projectparticipants_sample.csv (The system cannot find the file specified)
+[2025-11-26 23:25:42] [ERROR] C:UserssavinuDesktopRGU_second_yearCM2601ProjectCM2601_projectparticipants_sample.csv (The system cannot find the file specified)
+[2025-11-26 23:54:58] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-11-26 23:54:58] [INFO] Application started by user
+[2025-11-26 23:55:02] [INFO] User selected Organizer role
+[2025-11-26 23:55:02] [INFO] Entered Organizer Menu
+[2025-11-26 23:55:03] [INFO] User selected: Form Teams
+[2025-11-26 23:55:03] [INFO] Started team formation process
+[2025-11-26 23:55:11] [INFO] FileReadCallable: Starting to read CSV from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-11-26 23:55:12] [INFO] FileReadCallable: Successfully loaded 100 participants
+[2025-11-26 23:55:12] [INFO] File read completed, now forming teams
+[2025-11-26 23:55:12] [INFO] TeamFormationCallable: Starting team formation for 100 participants with team size: 5
+[2025-11-26 23:55:12] [INFO] TeamFormationCallable: Teams formed successfully - 20 team(s)
+[2025-11-26 23:55:12] [DEBUG] TeamFormationCallable: Team formation completed
+[2025-11-26 23:55:12] [INFO] Team formation process completed successfully
+[2025-11-26 23:55:14] [INFO] User selected: View Teams
+[2025-11-26 23:55:14] [INFO] Viewing all teams
+[2025-11-27 00:00:52] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-11-27 00:00:52] [INFO] Application started by user
+[2025-11-27 00:00:56] [INFO] User selected Participant role
+[2025-11-27 00:00:56] [INFO] Entered Participant Menu
+[2025-11-27 00:00:57] [INFO] User selected: Register (Take Survey)
+[2025-11-27 00:00:57] [INFO] Started new participant registration
+[2025-11-27 00:01:42] [INFO] Personality survey started for participant: P101
+[2025-11-27 00:01:47] [INFO] Participant created: P101 (savinu)
+[2025-11-27 00:01:47] [INFO] Participant P101 saved to CSV
+[2025-11-27 03:06:55] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-11-27 03:06:56] [INFO] Application started by user
+[2025-11-27 03:06:59] [INFO] User selected Organizer role
+[2025-11-27 03:06:59] [INFO] Entered Organizer Menu
+[2025-11-27 03:07:01] [INFO] User selected: Form Teams
+[2025-11-27 03:07:01] [INFO] Started team formation process
+[2025-11-27 03:07:11] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-11-27 03:07:11] [INFO] ParallelFileReadCallable: Completed reading 100 participants
+[2025-11-27 03:07:11] [INFO] ParallelTeamFormationCallable: Starting team formation
+[2025-11-27 03:07:11] [INFO] ParallelTeamFormationCallable: Completed forming 20 teams
+[2025-11-27 03:07:11] [INFO] Teams are ready!
+[2025-11-27 03:07:13] [INFO] User selected: View Teams
+[2025-11-27 03:07:13] [INFO] Viewing all teams
+[2025-11-27 03:07:13] [WARNING] Teams not formed yet
+[2025-11-27 03:12:48] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-11-27 03:12:48] [INFO] Application started by user
+[2025-11-27 03:12:51] [INFO] User selected Organizer role
+[2025-11-27 03:12:51] [INFO] Entered Organizer Menu
+[2025-11-27 03:12:54] [INFO] User selected: Form Teams
+[2025-11-27 03:12:54] [INFO] Started team formation process
+[2025-11-27 03:13:03] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-11-27 03:13:03] [INFO] ParallelFileReadCallable: Completed reading 100 participants
+[2025-11-27 03:13:03] [INFO] ParallelTeamFormationCallable: Starting team formation
+[2025-11-27 03:13:03] [INFO] ParallelTeamFormationCallable: Completed forming 20 teams
+[2025-11-27 03:13:03] [INFO] Teams are ready!
+[2025-11-27 03:13:06] [INFO] User selected: View Teams
+[2025-11-27 03:13:06] [INFO] Viewing all teams
+[2025-11-27 03:13:44] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-11-27 03:13:44] [INFO] Application started by user
+[2025-11-27 03:13:48] [INFO] User selected Organizer role
+[2025-11-27 03:13:48] [INFO] Entered Organizer Menu
+[2025-11-27 03:13:50] [INFO] User selected: Form Teams
+[2025-11-27 03:13:50] [INFO] Started team formation process
+[2025-11-27 03:14:08] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-11-27 03:14:08] [INFO] ParallelFileReadCallable: Completed reading 100 participants
+[2025-11-27 03:14:08] [INFO] ParallelTeamFormationCallable: Starting team formation
+[2025-11-27 03:14:08] [INFO] ParallelTeamFormationCallable: Completed forming 20 teams
+[2025-11-27 03:14:08] [INFO] Teams are ready!
+[2025-11-27 03:14:15] [INFO] User selected: View Teams
+[2025-11-27 03:14:15] [INFO] Viewing all teams
+[2025-11-27 03:18:10] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-11-27 03:18:10] [INFO] Application started by user
+[2025-11-27 03:18:13] [INFO] User selected Organizer role
+[2025-11-27 03:18:13] [INFO] Entered Organizer Menu
+[2025-11-27 03:18:24] [INFO] User selected: Form Teams
+[2025-11-27 03:18:24] [INFO] Started team formation process
+[2025-11-27 03:18:27] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-11-27 03:18:27] [INFO] ParallelFileReadCallable: Completed reading 100 participants
+[2025-11-27 03:18:27] [INFO] ParallelTeamFormationCallable: Starting team formation
+[2025-11-27 03:18:27] [INFO] ParallelTeamFormationCallable: Completed forming 20 teams
+[2025-11-27 03:18:27] [INFO] Teams are ready!
+[2025-11-27 03:18:29] [INFO] User selected: View Teams
+[2025-11-27 03:18:29] [INFO] Viewing all teams
+[2025-11-27 03:20:09] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-11-27 03:20:09] [INFO] Application started by user
+[2025-11-27 03:20:13] [INFO] User selected Organizer role
+[2025-11-27 03:20:13] [INFO] Entered Organizer Menu
+[2025-11-27 03:20:14] [INFO] User selected: Form Teams
+[2025-11-27 03:20:14] [INFO] Started team formation process
+[2025-11-27 03:20:24] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: // Step 2: Submit team formation task that depends on CSV reading
+[2025-11-27 03:20:24] [ERROR] Error forming teams: java.nio.file.InvalidPathException: Illegal character [:] in path at index 9: \\ Step 2: Submit team formation task that depends on CSV reading
+[2025-11-27 03:20:42] [INFO] User selected: Form Teams
+[2025-11-27 03:20:42] [INFO] Started team formation process
+[2025-11-27 03:21:00] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: executor.submit(() -> {
+[2025-11-27 03:21:00] [ERROR] Error forming teams: java.nio.file.InvalidPathException: Illegal char <>> at index 20: executor.submit(() -> {
+[2025-11-27 03:21:03] [INFO] User exited Organizer Menu
+[2025-11-27 03:21:17] [INFO] User selected Organizer role
+[2025-11-27 03:21:17] [INFO] Entered Organizer Menu
+[2025-11-27 03:21:21] [INFO] User selected: Form Teams
+[2025-11-27 03:21:21] [INFO] Started team formation process
+[2025-11-27 03:21:28] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-11-27 03:21:28] [INFO] Application started by user
+[2025-11-27 03:21:32] [INFO] User selected Organizer role
+[2025-11-27 03:21:32] [INFO] Entered Organizer Menu
+[2025-11-27 03:21:42] [INFO] User selected: Form Teams
+[2025-11-27 03:21:42] [INFO] Started team formation process
+[2025-11-27 03:21:45] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-11-27 03:21:45] [INFO] ParallelFileReadCallable: Completed reading 100 participants
+[2025-11-27 03:21:45] [INFO] ParallelTeamFormationCallable: Starting team formation
+[2025-11-27 03:21:45] [INFO] ParallelTeamFormationCallable: Completed forming teams
+[2025-11-27 03:21:45] [INFO] Teams are ready!
+[2025-11-27 03:21:47] [INFO] User selected: View Teams
+[2025-11-27 03:21:47] [INFO] Viewing all teams
+[2025-11-27 03:25:01] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-11-27 03:25:01] [INFO] Application started by user
+[2025-11-27 03:25:04] [INFO] User selected Organizer role
+[2025-11-27 03:25:04] [INFO] Entered Organizer Menu
+[2025-11-27 03:25:05] [INFO] User selected: Form Teams
+[2025-11-27 03:25:05] [INFO] Started team formation process
+[2025-11-27 03:25:16] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-11-27 03:25:17] [INFO] ParallelFileReadCallable: Completed reading 100 participants
+[2025-11-27 03:25:17] [INFO] ParallelTeamFormationCallable: Starting TRULY parallel team formation
+[2025-11-27 03:25:17] [INFO] Parallel attempt #2 started
+[2025-11-27 03:25:17] [INFO] Parallel attempt #1 started
+[2025-11-27 03:25:17] [INFO] Parallel attempt #0 started
+[2025-11-27 03:25:17] [INFO] Parallel attempt #1 completed with 20 teams
+[2025-11-27 03:25:17] [INFO] Parallel attempt #2 completed with 20 teams
+[2025-11-27 03:25:17] [INFO] Parallel attempt #3 started
+[2025-11-27 03:25:17] [INFO] Parallel attempt #0 completed with 20 teams
+[2025-11-27 03:25:17] [INFO] Parallel attempt #3 completed with 20 teams
+[2025-11-27 03:25:17] [INFO] ParallelTeamFormationCallable: Selected best solution with 20 teams
+[2025-11-27 03:25:17] [INFO] Teams are ready!
+[2025-11-27 03:25:18] [INFO] User selected: View Teams
+[2025-11-27 03:25:18] [INFO] Viewing all teams
+[2025-11-27 11:17:45] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-11-27 11:17:45] [INFO] Application started by user
+[2025-11-27 11:17:47] [INFO] User selected Organizer role
+[2025-11-27 11:17:47] [INFO] Entered Organizer Menu
+[2025-11-27 11:17:57] [INFO] User selected: Form Teams
+[2025-11-27 11:17:57] [INFO] Started team formation process
+[2025-11-27 11:18:01] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_500.csv
+[2025-11-27 11:18:01] [ERROR] Error forming teams: java.util.concurrent.ExecutionException: Exception.InvalidSurveyDataException: Invalid CSV row: 
+[2025-11-27 11:19:46] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-11-27 11:19:46] [INFO] Application started by user
+[2025-11-27 11:19:50] [INFO] User selected Organizer role
+[2025-11-27 11:19:50] [INFO] Entered Organizer Menu
+[2025-11-27 11:19:51] [INFO] User selected: Form Teams
+[2025-11-27 11:19:51] [INFO] Started team formation process
+[2025-11-27 11:20:11] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_500.csv
+[2025-11-27 11:20:11] [ERROR] Error forming teams: java.util.concurrent.ExecutionException: Exception.InvalidSurveyDataException: Invalid CSV row: 
+[2025-12-03 00:09:16] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:09:16] [INFO] Application started by user
+[2025-12-03 00:09:20] [INFO] User selected Participant role
+[2025-12-03 00:09:20] [INFO] Entered Participant Menu
+[2025-12-03 00:09:22] [INFO] User selected: Register (Take Survey)
+[2025-12-03 00:09:22] [INFO] Started new participant registration
+[2025-12-03 00:09:27] [ERROR] Error in participantMenu: Cannot invoke "Service.CSVHandler.containsID(String)" because "Main.csvHandler" is null
+[2025-12-03 00:11:48] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:11:48] [INFO] Application started by user
+[2025-12-03 00:11:51] [INFO] User selected Participant role
+[2025-12-03 00:11:51] [INFO] Entered Participant Menu
+[2025-12-03 00:11:52] [INFO] User selected: Register (Take Survey)
+[2025-12-03 00:11:52] [INFO] Started new participant registration
+[2025-12-03 00:12:32] [INFO] Personality survey started for participant: P101
+[2025-12-03 00:12:53] [INFO] Participant created: P101 (savinu)
+[2025-12-03 00:12:53] [INFO] Participant P101 saved to CSV
+[2025-12-03 00:14:49] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:14:49] [INFO] Application started by user
+[2025-12-03 00:14:51] [INFO] User selected Participant role
+[2025-12-03 00:14:51] [INFO] Entered Participant Menu
+[2025-12-03 00:14:51] [INFO] User selected: Register (Take Survey)
+[2025-12-03 00:14:51] [INFO] Started new participant registration
+[2025-12-03 00:14:55] [ERROR] ID already exists!
+[2025-12-03 00:16:04] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:16:04] [INFO] Application started by user
+[2025-12-03 00:16:05] [INFO] User selected Participant role
+[2025-12-03 00:16:05] [INFO] Entered Participant Menu
+[2025-12-03 00:16:06] [INFO] User selected: Register (Take Survey)
+[2025-12-03 00:16:06] [INFO] Started new participant registration
+[2025-12-03 00:20:16] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:20:16] [INFO] Application started by user
+[2025-12-03 00:20:20] [INFO] User selected Participant role
+[2025-12-03 00:20:20] [INFO] Entered Participant Menu
+[2025-12-03 00:20:20] [INFO] User selected: Register (Take Survey)
+[2025-12-03 00:20:20] [INFO] Started new participant registration
+[2025-12-03 00:20:52] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:20:52] [INFO] Application started by user
+[2025-12-03 00:20:58] [INFO] User selected Participant role
+[2025-12-03 00:20:58] [INFO] Entered Participant Menu
+[2025-12-03 00:20:59] [INFO] User selected: Register (Take Survey)
+[2025-12-03 00:20:59] [INFO] Started new participant registration
+[2025-12-03 00:21:44] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:21:44] [INFO] Application started by user
+[2025-12-03 00:21:50] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:21:50] [INFO] Application started by user
+[2025-12-03 00:21:52] [INFO] User selected Participant role
+[2025-12-03 00:21:52] [INFO] Entered Participant Menu
+[2025-12-03 00:21:53] [INFO] User selected: Register (Take Survey)
+[2025-12-03 00:21:53] [INFO] Started new participant registration
+[2025-12-03 00:27:29] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:27:29] [INFO] Application started by user
+[2025-12-03 00:28:21] [INFO] User selected Participant role
+[2025-12-03 00:28:21] [INFO] Entered Participant Menu
+[2025-12-03 00:28:22] [INFO] User selected: Register (Take Survey)
+[2025-12-03 00:28:22] [INFO] Started new participant registration
+[2025-12-03 00:28:51] [INFO] Personality survey started for participant: P103
+[2025-12-03 00:29:01] [ERROR] Error in participantMenu: Invalid answer for Q1. Must be 1-5.
+[2025-12-03 00:32:03] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:32:03] [INFO] Application started by user
+[2025-12-03 00:32:06] [INFO] User selected Participant role
+[2025-12-03 00:32:06] [INFO] Entered Participant Menu
+[2025-12-03 00:32:15] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:32:15] [INFO] Application started by user
+[2025-12-03 00:32:16] [INFO] User selected Organizer role
+[2025-12-03 00:32:16] [INFO] Entered Organizer Menu
+[2025-12-03 00:32:18] [INFO] User selected: Form Teams
+[2025-12-03 00:32:18] [INFO] Started team formation process
+[2025-12-03 00:32:48] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 00:32:48] [ERROR] Error forming teams: java.util.concurrent.ExecutionException: java.lang.NullPointerException: Cannot invoke "Service.CSVHandler.parseLineToParticipant(String)" because "this.csvHandler" is null
+[2025-12-03 00:34:03] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:34:03] [INFO] Application started by user
+[2025-12-03 00:37:02] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:37:02] [INFO] Application started by user
+[2025-12-03 00:37:45] [INFO] User selected Organizer role
+[2025-12-03 00:37:45] [INFO] Entered Organizer Menu
+[2025-12-03 00:37:48] [INFO] User selected: Form Teams
+[2025-12-03 00:37:48] [INFO] Started team formation process
+[2025-12-03 00:38:09] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 00:38:09] [INFO] ParallelFileReadCallable: Completed reading 101 participants
+[2025-12-03 00:38:09] [INFO] Starting team formation with 101 participants
+[2025-12-03 00:38:09] [INFO] Team formation completed in 18ms
+[2025-12-03 00:38:09] [INFO] Teams are ready!
+[2025-12-03 00:38:15] [INFO] User selected: View Teams
+[2025-12-03 00:38:15] [INFO] Viewing all teams
+[2025-12-03 00:38:35] [INFO] User exited Organizer Menu
+[2025-12-03 00:38:36] [INFO] User selected Participant role
+[2025-12-03 00:38:36] [INFO] Entered Participant Menu
+[2025-12-03 00:38:39] [INFO] User selected: Check My Team
+[2025-12-03 00:38:39] [INFO] User checking their team
+[2025-12-03 00:38:42] [INFO] Team found for participant p101: Team 18
+[2025-12-03 00:40:30] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:40:30] [INFO] Application started by user
+[2025-12-03 00:47:51] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:47:51] [INFO] Application started by user
+[2025-12-03 00:47:53] [INFO] User selected Participant role
+[2025-12-03 00:47:53] [INFO] Entered Participant Menu
+[2025-12-03 00:48:02] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:48:02] [INFO] Application started by user
+[2025-12-03 00:48:03] [INFO] User selected Organizer role
+[2025-12-03 00:48:03] [INFO] Entered Organizer Menu
+[2025-12-03 00:48:04] [INFO] User selected: Form Teams
+[2025-12-03 00:48:04] [INFO] Started team formation process
+[2025-12-03 00:48:12] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 00:48:12] [INFO] ParallelFileReadCallable: Completed reading 101 participants
+[2025-12-03 00:48:12] [INFO] Starting team formation with 101 participants
+[2025-12-03 00:48:12] [INFO] Team formation completed in 16ms
+[2025-12-03 00:48:12] [INFO] Teams are ready!
+[2025-12-03 00:48:18] [INFO] User selected: View Teams
+[2025-12-03 00:48:18] [INFO] Viewing all teams
+[2025-12-03 00:48:29] [INFO] User exited Organizer Menu
+[2025-12-03 00:48:31] [INFO] User selected Participant role
+[2025-12-03 00:48:31] [INFO] Entered Participant Menu
+[2025-12-03 00:48:32] [INFO] User selected: Check My Team
+[2025-12-03 00:48:32] [INFO] User checking their team
+[2025-12-03 00:48:36] [WARNING] No team found for participant: p103
+[2025-12-03 00:49:03] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:49:03] [INFO] Application started by user
+[2025-12-03 00:49:05] [INFO] User selected Participant role
+[2025-12-03 00:49:05] [INFO] Entered Participant Menu
+[2025-12-03 00:49:06] [INFO] User selected: Check My Team
+[2025-12-03 00:49:06] [INFO] User checking their team
+[2025-12-03 00:49:06] [WARNING] Teams not formed yet
+[2025-12-03 00:59:20] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 00:59:20] [INFO] Application started by user
+[2025-12-03 00:59:21] [INFO] User selected Organizer role
+[2025-12-03 00:59:21] [INFO] Entered Organizer Menu
+[2025-12-03 00:59:24] [INFO] User selected: Form Teams
+[2025-12-03 00:59:24] [INFO] Started team formation process
+[2025-12-03 00:59:31] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 00:59:31] [INFO] ParallelFileReadCallable: Completed reading 101 participants
+[2025-12-03 00:59:31] [INFO] Starting team formation with 101 participants
+[2025-12-03 00:59:31] [INFO] Team formation completed in 16ms
+[2025-12-03 00:59:31] [INFO] Teams are ready!
+[2025-12-03 01:00:52] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:00:52] [INFO] Application started by user
+[2025-12-03 01:00:54] [INFO] User selected Organizer role
+[2025-12-03 01:00:54] [INFO] Entered Organizer Menu
+[2025-12-03 01:00:56] [INFO] User selected: Form Teams
+[2025-12-03 01:00:56] [INFO] Started team formation process
+[2025-12-03 01:01:04] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: invalid.csv
+[2025-12-03 01:01:04] [ERROR] Error forming teams: java.nio.file.NoSuchFileException: invalid.csv
+[2025-12-03 01:02:49] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:02:49] [INFO] Application started by user
+[2025-12-03 01:02:57] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:02:57] [INFO] Application started by user
+[2025-12-03 01:02:59] [INFO] User selected Organizer role
+[2025-12-03 01:02:59] [INFO] Entered Organizer Menu
+[2025-12-03 01:03:00] [INFO] User selected: Form Teams
+[2025-12-03 01:03:00] [INFO] Started team formation process
+[2025-12-03 01:18:11] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:18:11] [INFO] Application started by user
+[2025-12-03 01:21:08] [INFO] User selected Organizer role
+[2025-12-03 01:21:08] [INFO] Entered Organizer Menu
+[2025-12-03 01:21:12] [INFO] User selected: Form Teams
+[2025-12-03 01:21:12] [INFO] Started team formation process
+[2025-12-03 01:22:00] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:22:00] [INFO] Application started by user
+[2025-12-03 01:22:01] [INFO] User selected Organizer role
+[2025-12-03 01:22:01] [INFO] Entered Organizer Menu
+[2025-12-03 01:22:02] [INFO] User selected: Form Teams
+[2025-12-03 01:22:02] [INFO] Started team formation process
+[2025-12-03 01:23:18] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:23:18] [INFO] Application started by user
+[2025-12-03 01:23:22] [INFO] User selected Organizer role
+[2025-12-03 01:23:22] [INFO] Entered Organizer Menu
+[2025-12-03 01:23:23] [INFO] User selected: Form Teams
+[2025-12-03 01:23:23] [INFO] Started team formation process
+[2025-12-03 01:24:22] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:24:22] [INFO] Application started by user
+[2025-12-03 01:24:26] [INFO] User selected Organizer role
+[2025-12-03 01:24:26] [INFO] Entered Organizer Menu
+[2025-12-03 01:24:27] [INFO] User selected: Form Teams
+[2025-12-03 01:24:27] [INFO] Started team formation process
+[2025-12-03 01:24:36] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 01:24:36] [INFO] ParallelFileReadCallable: Completed reading 101 participants
+[2025-12-03 01:24:36] [INFO] Starting team formation with 101 participants
+[2025-12-03 01:24:36] [INFO] Team formation completed in 15ms
+[2025-12-03 01:24:36] [INFO] Teams are ready!
+[2025-12-03 01:24:39] [INFO] User selected: View Teams
+[2025-12-03 01:24:39] [INFO] Viewing all teams
+[2025-12-03 01:27:26] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:27:26] [INFO] Application started by user
+[2025-12-03 01:27:28] [INFO] User selected Organizer role
+[2025-12-03 01:27:28] [INFO] Entered Organizer Menu
+[2025-12-03 01:27:30] [INFO] User selected: View Teams
+[2025-12-03 01:27:30] [INFO] Viewing all teams
+[2025-12-03 01:27:30] [WARNING] Teams not formed yet or still forming
+[2025-12-03 01:28:14] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:28:14] [INFO] Application started by user
+[2025-12-03 01:28:16] [INFO] User selected Organizer role
+[2025-12-03 01:28:16] [INFO] Entered Organizer Menu
+[2025-12-03 01:28:18] [INFO] User selected: Remove Participant
+[2025-12-03 01:28:18] [INFO] Started participant removal process
+[2025-12-03 01:28:18] [WARNING] No participants loaded
+[2025-12-03 01:31:28] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:31:29] [INFO] Application started by user
+[2025-12-03 01:31:32] [INFO] User selected Organizer role
+[2025-12-03 01:31:32] [INFO] Entered Organizer Menu
+[2025-12-03 01:31:33] [INFO] User selected: Form Teams
+[2025-12-03 01:31:33] [INFO] Started team formation process
+[2025-12-03 01:31:43] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 01:31:43] [INFO] ParallelFileReadCallable: Completed reading 101 participants
+[2025-12-03 01:31:43] [INFO] Starting team formation with 101 participants
+[2025-12-03 01:31:43] [INFO] Team formation completed in 13ms
+[2025-12-03 01:31:43] [INFO] Teams are ready!
+[2025-12-03 01:31:46] [INFO] User selected: Remove Participant
+[2025-12-03 01:31:46] [INFO] Started participant removal process
+[2025-12-03 01:31:54] [INFO] Participant p005 removed successfully
+[2025-12-03 01:31:54] [INFO] CSV updated after participant removal
+[2025-12-03 01:31:54] [INFO] Teams reformed: 20 team(s)
+[2025-12-03 01:32:14] [INFO] User exited Organizer Menu
+[2025-12-03 01:32:16] [INFO] User selected Participant role
+[2025-12-03 01:32:16] [INFO] Entered Participant Menu
+[2025-12-03 01:32:18] [INFO] User selected: Check My Team
+[2025-12-03 01:32:18] [INFO] User checking their team
+[2025-12-03 01:32:20] [WARNING] No team found for participant: p005
+[2025-12-03 01:34:05] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:34:05] [INFO] Application started by user
+[2025-12-03 01:34:17] [INFO] User selected Participant role
+[2025-12-03 01:34:17] [INFO] Entered Participant Menu
+[2025-12-03 01:34:24] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:34:24] [INFO] Application started by user
+[2025-12-03 01:34:26] [INFO] User selected Organizer role
+[2025-12-03 01:34:26] [INFO] Entered Organizer Menu
+[2025-12-03 01:34:29] [INFO] User selected: Form Teams
+[2025-12-03 01:34:29] [INFO] Started team formation process
+[2025-12-03 01:35:28] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 01:35:28] [INFO] ParallelFileReadCallable: Completed reading 100 participants
+[2025-12-03 01:35:28] [INFO] Starting team formation with 100 participants
+[2025-12-03 01:35:28] [INFO] Team formation completed in 17ms
+[2025-12-03 01:35:28] [INFO] Teams are ready!
+[2025-12-03 01:35:30] [INFO] User selected: Remove Participant
+[2025-12-03 01:35:30] [INFO] Started participant removal process
+[2025-12-03 01:35:44] [WARNING] Participant not found: p107
+[2025-12-03 01:39:01] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:39:01] [INFO] Application started by user
+[2025-12-03 01:39:04] [INFO] User selected Organizer role
+[2025-12-03 01:39:04] [INFO] Entered Organizer Menu
+[2025-12-03 01:39:05] [INFO] User selected: Form Teams
+[2025-12-03 01:39:05] [INFO] Started team formation process
+[2025-12-03 01:39:17] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 01:39:17] [INFO] ParallelFileReadCallable: Completed reading 100 participants
+[2025-12-03 01:39:17] [INFO] Starting team formation with 100 participants
+[2025-12-03 01:39:17] [INFO] Team formation completed in 15ms
+[2025-12-03 01:39:17] [INFO] Teams are ready!
+[2025-12-03 01:39:24] [INFO] User selected: Remove Participant
+[2025-12-03 01:39:24] [INFO] Started participant removal process
+[2025-12-03 01:39:31] [WARNING] Participant not found: p005
+[2025-12-03 01:39:42] [INFO] User selected: Remove Participant
+[2025-12-03 01:39:42] [INFO] Started participant removal process
+[2025-12-03 01:39:45] [INFO] Participant p003 removed successfully
+[2025-12-03 01:39:45] [INFO] CSV updated after participant removal
+[2025-12-03 01:39:45] [INFO] Teams reformed: 20 team(s)
+[2025-12-03 01:40:51] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:40:51] [INFO] Application started by user
+[2025-12-03 01:40:53] [INFO] User selected Participant role
+[2025-12-03 01:40:53] [INFO] Entered Participant Menu
+[2025-12-03 01:41:05] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:41:05] [INFO] Application started by user
+[2025-12-03 01:41:09] [INFO] User selected Organizer role
+[2025-12-03 01:41:09] [INFO] Entered Organizer Menu
+[2025-12-03 01:41:12] [INFO] User selected: Form Teams
+[2025-12-03 01:41:12] [INFO] Started team formation process
+[2025-12-03 01:41:21] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 01:41:21] [INFO] ParallelFileReadCallable: Completed reading 99 participants
+[2025-12-03 01:41:21] [INFO] Starting team formation with 99 participants
+[2025-12-03 01:41:21] [INFO] Team formation completed in 14ms
+[2025-12-03 01:41:21] [INFO] Teams are ready!
+[2025-12-03 01:41:33] [INFO] User selected: Remove Participant
+[2025-12-03 01:41:33] [INFO] Started participant removal process
+[2025-12-03 01:41:42] [INFO] Participant p007 removed successfully
+[2025-12-03 01:41:42] [ERROR] Failed to update CSV: participants_sample.csv (The process cannot access the file because it is being used by another process)
+[2025-12-03 01:41:42] [INFO] Teams reformed: 20 team(s)
+[2025-12-03 01:44:20] [INFO] User selected: Export Teams to CSV
+[2025-12-03 01:44:20] [INFO] Started team export process
+[2025-12-03 01:44:47] [ERROR] Error in organizerMenu: CSV files must end with '.csv'.
+[2025-12-03 01:45:00] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:45:00] [INFO] Application started by user
+[2025-12-03 01:45:02] [INFO] User selected Organizer role
+[2025-12-03 01:45:02] [INFO] Entered Organizer Menu
+[2025-12-03 01:45:08] [INFO] User selected: Form Teams
+[2025-12-03 01:45:08] [INFO] Started team formation process
+[2025-12-03 01:45:16] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 01:45:16] [INFO] ParallelFileReadCallable: Completed reading 99 participants
+[2025-12-03 01:45:16] [INFO] Starting team formation with 99 participants
+[2025-12-03 01:45:16] [INFO] Team formation completed in 14ms
+[2025-12-03 01:45:16] [INFO] Teams are ready!
+[2025-12-03 01:45:26] [INFO] User selected: Export Teams to CSV
+[2025-12-03 01:45:26] [INFO] Started team export process
+[2025-12-03 01:45:32] [ERROR] Error in organizerMenu: CSV files must end with '.csv'.
+[2025-12-03 01:46:06] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:46:06] [INFO] Application started by user
+[2025-12-03 01:46:19] [INFO] User selected Organizer role
+[2025-12-03 01:46:19] [INFO] Entered Organizer Menu
+[2025-12-03 01:46:22] [INFO] User selected: Form Teams
+[2025-12-03 01:46:22] [INFO] Started team formation process
+[2025-12-03 01:46:32] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 01:46:32] [INFO] ParallelFileReadCallable: Completed reading 99 participants
+[2025-12-03 01:46:32] [INFO] Starting team formation with 99 participants
+[2025-12-03 01:46:32] [INFO] Team formation completed in 14ms
+[2025-12-03 01:46:32] [INFO] Teams are ready!
+[2025-12-03 01:46:34] [INFO] User selected: Export Teams to CSV
+[2025-12-03 01:46:34] [INFO] Started team export process
+[2025-12-03 01:46:39] [INFO] Teams exported to: teams.csv
+[2025-12-03 01:48:40] [INFO] User selected: Export Teams to CSV
+[2025-12-03 01:48:40] [INFO] Started team export process
+[2025-12-03 01:48:41] [INFO] Teams exported to: teams_output.csv
+[2025-12-03 01:49:40] [INFO] User selected: Export Teams to CSV
+[2025-12-03 01:49:40] [INFO] Started team export process
+[2025-12-03 01:49:45] [ERROR] Error in organizerMenu: CSV files must end with '.csv'.
+[2025-12-03 01:51:26] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:51:26] [INFO] Application started by user
+[2025-12-03 01:51:38] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 01:51:38] [INFO] Application started by user
+[2025-12-03 01:51:41] [INFO] User selected Organizer role
+[2025-12-03 01:51:41] [INFO] Entered Organizer Menu
+[2025-12-03 01:51:46] [INFO] User selected: Form Teams
+[2025-12-03 01:51:46] [INFO] Started team formation process
+[2025-12-03 01:52:30] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 01:52:30] [INFO] ParallelFileReadCallable: Completed reading 99 participants
+[2025-12-03 01:52:30] [INFO] Starting team formation with 99 participants
+[2025-12-03 01:52:30] [INFO] Team formation completed in 17ms
+[2025-12-03 01:52:30] [INFO] Teams are ready!
+[2025-12-03 01:52:33] [INFO] User selected: View Teams
+[2025-12-03 01:52:33] [INFO] Viewing all teams
+[2025-12-03 08:54:20] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 08:54:20] [INFO] Application started by user
+[2025-12-03 08:54:23] [INFO] User selected Organizer role
+[2025-12-03 08:54:23] [INFO] Entered Organizer Menu
+[2025-12-03 08:54:24] [INFO] User selected: Form Teams
+[2025-12-03 08:54:24] [INFO] Started team formation process
+[2025-12-03 08:54:38] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 08:54:38] [ERROR] Error forming teams: java.util.concurrent.ExecutionException: Exception.InvalidSurveyDataException: Invalid enum value: P008,Participant_8,user8@university.edu,Valorant,10,DEFENDER,81,
+[2025-12-03 09:05:51] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 09:05:51] [INFO] Application started by user
+[2025-12-03 09:05:54] [INFO] User selected Organizer role
+[2025-12-03 09:05:54] [INFO] Entered Organizer Menu
+[2025-12-03 09:05:55] [INFO] User selected: Form Teams
+[2025-12-03 09:05:55] [INFO] Started team formation process
+[2025-12-03 09:06:08] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 09:06:08] [ERROR] CSV parsing error: Invalid enum value: P008,Participant_8,user8@university.edu,Valorant,10,DEFENDER,81,
+[2025-12-03 09:06:08] [ERROR] Team formation failed
+[2025-12-03 09:07:06] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 09:07:06] [INFO] Application started by user
+[2025-12-03 09:07:09] [INFO] User selected Organizer role
+[2025-12-03 09:07:09] [INFO] Entered Organizer Menu
+[2025-12-03 09:07:17] [INFO] User selected: Form Teams
+[2025-12-03 09:07:17] [INFO] Started team formation process
+[2025-12-03 09:07:28] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 09:07:28] [ERROR] CSV parsing error: Invalid enum value: P008,Participant_8,user8@university.edu,Valorant,10,DEFENDER,81,
+[2025-12-03 09:07:28] [INFO] ParallelFileReadCallable: Completed reading 79 participants
+[2025-12-03 09:07:28] [INFO] Starting team formation with 79 participants
+[2025-12-03 09:07:28] [INFO] Team formation completed in 20ms
+[2025-12-03 09:07:28] [INFO] Teams are ready!
+[2025-12-03 09:07:39] [INFO] User selected: View Teams
+[2025-12-03 09:07:39] [INFO] Viewing all teams
+[2025-12-03 09:09:10] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 09:09:10] [INFO] Application started by user
+[2025-12-03 09:09:12] [INFO] User selected Organizer role
+[2025-12-03 09:09:12] [INFO] Entered Organizer Menu
+[2025-12-03 09:10:18] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 09:10:18] [INFO] Application started by user
+[2025-12-03 09:10:20] [INFO] User selected Organizer role
+[2025-12-03 09:10:20] [INFO] Entered Organizer Menu
+[2025-12-03 09:10:22] [INFO] User selected: Form Teams
+[2025-12-03 09:10:22] [INFO] Started team formation process
+[2025-12-03 09:10:29] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 09:10:29] [ERROR] CSV parsing error: Invalid CSV row (expected 8 columns): P008,Participant_8,user8@university.edu,Valorant,10,DEFENDER,81,
+[2025-12-03 09:10:29] [INFO] ParallelFileReadCallable: Completed reading 79 participants
+[2025-12-03 09:10:29] [INFO] Starting team formation with 79 participants
+[2025-12-03 09:10:29] [INFO] Team formation completed in 15ms
+[2025-12-03 09:10:29] [INFO] Teams are ready!
+[2025-12-03 09:20:15] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 09:20:15] [INFO] Application started by user
+[2025-12-03 09:20:20] [INFO] User selected Organizer role
+[2025-12-03 09:20:20] [INFO] Entered Organizer Menu
+[2025-12-03 09:20:24] [INFO] User selected: Form Teams
+[2025-12-03 09:20:24] [INFO] Started team formation process
+[2025-12-03 09:20:40] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 09:20:40] [ERROR] CSV parsing error: Invalid CSV row (expected 8 columns): P008,Participant_8,user8@university.edu,Valorant,10,DEFENDER,81,
+[2025-12-03 09:20:40] [INFO] ParallelFileReadCallable: Completed reading 79 participants
+[2025-12-03 09:20:40] [INFO] Starting team formation with 79 participants
+[2025-12-03 09:20:40] [INFO] Team formation completed in 21ms
+[2025-12-03 09:20:40] [INFO] Teams are ready!
+[2025-12-03 09:29:59] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 09:29:59] [INFO] Application started by user
+[2025-12-03 09:30:01] [INFO] User selected Organizer role
+[2025-12-03 09:30:01] [INFO] Entered Organizer Menu
+[2025-12-03 09:30:15] [INFO] User selected: Form Teams
+[2025-12-03 09:30:15] [INFO] Started team formation process
+[2025-12-03 09:30:24] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 09:30:24] [ERROR] CSV parsing error: Invalid enum value: P008,Participant_8,user8@university.edu,Valorant,10,DEFENDER,81,HELPER
+[2025-12-03 09:30:24] [INFO] ParallelFileReadCallable: Completed reading 79 participants
+[2025-12-03 09:30:24] [INFO] Starting team formation with 79 participants
+[2025-12-03 09:30:24] [INFO] Team formation completed in 24ms
+[2025-12-03 09:30:24] [INFO] Teams are ready!
+[2025-12-03 09:31:05] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 09:31:05] [INFO] Application started by user
+[2025-12-03 09:31:07] [INFO] User selected Organizer role
+[2025-12-03 09:31:07] [INFO] Entered Organizer Menu
+[2025-12-03 09:31:09] [INFO] User selected: Form Teams
+[2025-12-03 09:31:09] [INFO] Started team formation process
+[2025-12-03 09:31:18] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 09:31:18] [ERROR] CSV parsing error: Invalid enum value: P008,Participant_8,user8@university.edu,Valorant,10,DEFENDER,81,HELPER
+[2025-12-03 09:31:18] [INFO] ParallelFileReadCallable: Completed reading 79 participants
+[2025-12-03 09:31:18] [INFO] Starting team formation with 79 participants
+[2025-12-03 09:31:18] [INFO] Team formation completed in 20ms
+[2025-12-03 09:31:18] [INFO] Teams are ready!
+[2025-12-03 09:34:16] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 09:34:16] [INFO] Application started by user
+[2025-12-03 09:34:19] [INFO] User selected Organizer role
+[2025-12-03 09:34:19] [INFO] Entered Organizer Menu
+[2025-12-03 09:34:30] [INFO] User selected: Form Teams
+[2025-12-03 09:34:30] [INFO] Started team formation process
+[2025-12-03 09:34:36] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 09:34:36] [ERROR] CSV parsing error: Invalid number format: P008,Participant_8,user8@university.edu,Valorant,hello,DEFENDER,81,BALANCED
+[2025-12-03 09:34:36] [INFO] ParallelFileReadCallable: Completed reading 79 participants
+[2025-12-03 09:34:36] [INFO] Starting team formation with 79 participants
+[2025-12-03 09:34:36] [INFO] Team formation completed in 20ms
+[2025-12-03 09:34:36] [INFO] Teams are ready!
+[2025-12-03 21:09:19] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 21:09:19] [INFO] Application started by user
+[2025-12-03 21:09:33] [INFO] User selected Organizer role
+[2025-12-03 21:09:33] [INFO] Entered Organizer Menu
+[2025-12-03 21:09:35] [INFO] User selected: Form Teams
+[2025-12-03 21:09:35] [INFO] Started team formation process
+[2025-12-03 21:09:55] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 21:09:55] [INFO] Thread-1 processing lines 25 to 50
+[2025-12-03 21:09:55] [INFO] Thread-0 processing lines 0 to 25
+[2025-12-03 21:09:55] [INFO] Thread-1 completed
+[2025-12-03 21:09:55] [ERROR] CSV parsing error: Invalid number format: P008,Participant_8,user8@university.edu,Valorant,hello,DEFENDER,81,BALANCED
+[2025-12-03 21:09:55] [INFO] Thread-0 completed
+[2025-12-03 21:09:55] [INFO] Thread-2 processing lines 50 to 75
+[2025-12-03 21:09:55] [INFO] Thread-3 processing lines 75 to 98
+[2025-12-03 21:09:55] [INFO] Thread-2 completed
+[2025-12-03 21:09:55] [INFO] Thread-3 completed
+[2025-12-03 21:09:55] [INFO] ParallelFileReadCallable: Completed reading 78 participants
+[2025-12-03 21:09:55] [INFO] Starting team formation with 78 participants
+[2025-12-03 21:09:55] [INFO] Team formation completed in 34ms
+[2025-12-03 21:09:55] [INFO] Teams are ready!
+[2025-12-03 21:17:04] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 21:17:04] [INFO] Application started by user
+[2025-12-03 21:17:07] [INFO] User selected Organizer role
+[2025-12-03 21:17:07] [INFO] Entered Organizer Menu
+[2025-12-03 21:17:20] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 21:17:20] [INFO] Application started by user
+[2025-12-03 21:17:22] [INFO] User selected Organizer role
+[2025-12-03 21:17:22] [INFO] Entered Organizer Menu
+[2025-12-03 21:17:24] [INFO] User selected: Form Teams
+[2025-12-03 21:17:24] [INFO] Started team formation process
+[2025-12-03 21:17:31] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2025-12-03 21:17:31] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-03 21:17:31] [INFO] Thread-1 processing lines 25 to 50
+[2025-12-03 21:17:31] [INFO] Thread-0 processing lines 0 to 25
+[2025-12-03 21:17:31] [INFO] Thread-1 completed[2025-12-03 21:17:31] [INFO] Thread-0 completed
+
+[2025-12-03 21:17:31] [INFO] Thread-3 processing lines 75 to 98
+[2025-12-03 21:17:31] [INFO] Thread-2 processing lines 50 to 75
+[2025-12-03 21:17:31] [INFO] Thread-3 completed[2025-12-03 21:17:31] [INFO] Thread-2 completed
+
+[2025-12-03 21:17:31] [INFO] COMPLETED: CSV read in 13ms
+[2025-12-03 21:17:31] [INFO] Starting team formation with 98 participants
+[2025-12-03 21:17:31] [INFO] Team formation completed in 20ms
+[2025-12-03 21:17:31] [INFO] Teams are ready!
+[2025-12-03 21:27:06] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 21:27:06] [INFO] Application started by user
+[2025-12-03 21:27:10] [INFO] User selected Organizer role
+[2025-12-03 21:27:10] [INFO] Entered Organizer Menu
+[2025-12-03 21:27:31] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 21:27:31] [INFO] Application started by user
+[2025-12-03 21:27:37] [INFO] User selected Organizer role
+[2025-12-03 21:27:37] [INFO] Entered Organizer Menu
+[2025-12-03 21:28:09] [INFO] User selected: Form Teams
+[2025-12-03 21:28:09] [INFO] Started team formation process
+[2025-12-03 21:28:49] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-03 21:28:49] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-03 21:28:49] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-03 21:28:49] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-03 21:28:49] [INFO] Thread-1 completed[2025-12-03 21:28:49] [INFO] Thread-0 completed
+
+[2025-12-03 21:28:49] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-03 21:28:49] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-03 21:28:49] [INFO] Thread-2 completed
+[2025-12-03 21:28:49] [INFO] Thread-3 completed
+[2025-12-03 21:28:49] [INFO] COMPLETED: CSV read in 14ms
+[2025-12-03 21:28:49] [INFO] Starting team formation with 200 participants
+[2025-12-03 21:28:49] [INFO] Team formation completed in 25ms
+[2025-12-03 21:28:49] [INFO] Teams are ready!
+e[2025-12-03 22:07:53] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 22:07:53] [INFO] Application started by user
+[2025-12-03 22:07:55] [INFO] User selected Organizer role
+[2025-12-03 22:07:55] [INFO] Entered Organizer Menu
+[2025-12-03 22:07:57] [INFO] User selected: Form Teams
+[2025-12-03 22:07:57] [INFO] Started team formation process
+[2025-12-03 22:08:06] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-03 22:08:06] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-03 22:08:06] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-03 22:08:06] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-03 22:08:06] [INFO] Thread-1 completed
+[2025-12-03 22:08:06] [INFO] Thread-0 completed
+[2025-12-03 22:08:06] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-03 22:08:06] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-03 22:08:06] [INFO] Thread-2 completed
+[2025-12-03 22:08:06] [INFO] Thread-3 completed
+[2025-12-03 22:08:06] [INFO] COMPLETED: CSV read in 12ms
+[2025-12-03 22:08:06] [INFO] Starting team formation with 200 participants
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 199 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 198 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 197 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 196 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 194 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 193 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 192 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 191 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 189 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 188 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 187 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 186 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 184 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 183 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 182 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 181 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 179 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 178 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 177 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 176 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 174 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 173 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 172 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 171 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 169 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 168 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 167 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 166 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 164 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 163 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 162 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 161 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 159 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 158 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 157 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 156 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 154 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 153 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 152 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 151 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 149 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 148 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 147 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 146 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 144 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 143 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 142 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 141 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 139 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 138 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 137 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 136 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 134 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 133 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 132 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 131 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 129 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 128 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 127 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 126 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 124 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 123 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 122 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 121 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 119 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 118 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 117 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 116 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 114 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 113 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 112 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 111 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 109 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 108 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 107 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 106 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 104 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 103 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 102 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 101 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 99 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 98 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 97 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 96 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 94 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 93 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 92 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 91 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 89 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 88 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 87 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 86 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 84 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 83 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 82 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 81 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 79 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 78 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 77 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 76 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 74 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 73 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 72 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 71 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 69 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 68 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 67 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 66 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 64 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 63 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 62 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 61 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 59 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 58 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 57 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 56 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 54 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 53 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 52 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 51 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 49 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 48 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 47 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 46 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 44 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 43 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 42 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 41 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 39 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 38 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 37 candidates left (team size = 3)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 36 candidates left (team size = 4)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 34 candidates left (team size = 1)
+[2025-12-03 22:08:06] [INFO] Sequential fallback – only 33 candidates left (team size = 2)
+[2025-12-03 22:08:06] [INFO] Team formation completed in 34ms
+[2025-12-03 22:08:06] [INFO] Teams are ready!
+[2025-12-03 22:08:09] [INFO] User selected: View Teams
+[2025-12-03 22:08:09] [INFO] Viewing all teams
+[2025-12-03 22:08:09] [WARNING] Teams are empty
+[2025-12-03 22:10:11] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 22:10:11] [INFO] Application started by user
+[2025-12-03 22:10:14] [INFO] User selected Organizer role
+[2025-12-03 22:10:14] [INFO] Entered Organizer Menu
+[2025-12-03 22:10:16] [INFO] User selected: Form Teams
+[2025-12-03 22:10:16] [INFO] Started team formation process
+[2025-12-03 22:10:25] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-03 22:10:25] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-03 22:10:25] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-03 22:10:25] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-03 22:10:25] [INFO] Thread-0 completed
+[2025-12-03 22:10:25] [INFO] Thread-1 completed
+[2025-12-03 22:10:25] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-03 22:10:25] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-03 22:10:25] [INFO] Thread-2 completed
+[2025-12-03 22:10:25] [INFO] Thread-3 completed
+[2025-12-03 22:10:25] [INFO] COMPLETED: CSV read in 14ms
+[2025-12-03 22:10:25] [INFO] Starting team formation with 200 participants
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 199 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 198 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 197 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 196 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 194 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 193 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 192 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 191 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 189 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 188 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 187 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 186 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 184 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 183 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 182 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 181 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 179 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 178 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 177 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 176 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 174 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 173 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 172 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 171 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 169 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 168 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 167 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 166 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 164 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 163 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 162 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 161 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 159 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 158 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 157 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 156 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 154 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 153 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 152 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 151 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 149 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 148 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 147 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 146 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 144 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 143 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 142 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 141 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 139 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 138 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 137 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 136 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 134 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 133 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 132 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 131 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 129 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 128 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 127 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 126 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 124 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 123 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 122 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 121 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 119 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 118 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 117 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 116 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 114 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 113 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 112 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 111 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 109 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 108 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 107 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 106 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 104 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 103 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 102 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 101 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 99 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 98 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 97 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 96 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 94 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 93 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 92 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 91 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 89 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 88 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 87 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 86 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 84 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 83 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 82 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 81 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 79 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 78 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 77 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 76 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 74 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 73 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 72 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 71 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 69 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 68 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 67 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 66 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 64 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 63 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 62 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 61 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 59 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 58 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 57 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 56 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 54 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 53 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 52 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 51 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 49 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 48 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 47 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 46 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 44 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 43 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 42 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 41 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 39 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 38 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 37 candidates left (team size = 3)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 36 candidates left (team size = 4)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 34 candidates left (team size = 1)
+[2025-12-03 22:10:25] [INFO] Sequential fallback – only 33 candidates left (team size = 2)
+[2025-12-03 22:10:25] [INFO] Team formation completed in 43ms
+[2025-12-03 22:10:25] [INFO] Teams are ready!
+[2025-12-03 22:10:30] [INFO] User selected: View Teams
+[2025-12-03 22:10:30] [INFO] Viewing all teams
+[2025-12-03 22:19:55] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 22:19:55] [INFO] Application started by user
+[2025-12-03 22:19:57] [INFO] User selected Organizer role
+[2025-12-03 22:19:57] [INFO] Entered Organizer Menu
+[2025-12-03 22:19:58] [INFO] User selected: Form Teams
+[2025-12-03 22:19:58] [INFO] Started team formation process
+[2025-12-03 22:20:11] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-03 22:20:11] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-03 22:20:11] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-03 22:20:11] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-03 22:20:11] [INFO] Thread-1 completed
+[2025-12-03 22:20:11] [INFO] Thread-0 completed
+[2025-12-03 22:20:11] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-03 22:20:11] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-03 22:20:11] [INFO] Thread-2 completed
+[2025-12-03 22:20:11] [INFO] Thread-3 completed
+[2025-12-03 22:20:11] [INFO] COMPLETED: CSV read in 10ms
+[2025-12-03 22:20:11] [INFO] Starting team formation with 200 participants
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 199, current team size = 1
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 199 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-67] (67 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [67-134] (67 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [134-199] (65 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 198, current team size = 2
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 198 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-66] (66 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [66-132] (66 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [132-198] (66 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 197, current team size = 3
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 197 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-66] (66 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [66-132] (66 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [132-197] (65 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 40.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 196, current team size = 4
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 196 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-66] (66 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [66-132] (66 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [132-196] (64 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 39.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 194, current team size = 1
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 194 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-65] (65 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [65-130] (65 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [130-194] (64 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 193, current team size = 2
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 193 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-65] (65 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-1] Processing chunk [65-130] (65 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-3] Processing chunk [130-193] (63 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 192, current team size = 3
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 192 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-64] (64 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-1] Processing chunk [64-128] (64 candidates)[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-3] Processing chunk [128-192] (64 candidates)
+
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 40.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 191, current team size = 4
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 191 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-64] (64 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-3] Processing chunk [128-191] (63 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-1] Processing chunk [64-128] (64 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 39.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 189, current team size = 1
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 189 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-63] (63 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [63-126] (63 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [126-189] (63 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 188, current team size = 2
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 188 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-63] (63 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [126-188] (62 candidates)[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [63-126] (63 candidates)
+
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 187, current team size = 3
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 187 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [63-126] (63 candidates)[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-63] (63 candidates)
+
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [126-187] (61 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 40.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 186, current team size = 4
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 186 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-62] (62 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-4] Processing chunk [62-124] (62 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [124-186] (62 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 39.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 184, current team size = 1
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 184 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-62] (62 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-4] Processing chunk [62-124] (62 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [124-184] (60 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 183, current team size = 2
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 183 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-61] (61 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-4] Processing chunk [61-122] (61 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [122-183] (61 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 182, current team size = 3
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 182 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-4] Processing chunk [61-122] (61 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-61] (61 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [122-182] (60 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 40.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 181, current team size = 4
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 181 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [61-122] (61 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [122-181] (59 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-61] (61 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 40.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 179, current team size = 1
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 179 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-1] Processing chunk [60-120] (60 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-60] (60 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [120-179] (59 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 178, current team size = 2
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 178 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [60-120] (60 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-1] Processing chunk [0-60] (60 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [120-178] (58 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 177, current team size = 3
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 177 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-1] Processing chunk [59-118] (59 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-59] (59 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [118-177] (59 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 40.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 176, current team size = 4
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 176 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-1] Processing chunk [59-118] (59 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-59] (59 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [118-176] (58 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 40.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 174, current team size = 1
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 174 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [58-116] (58 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-1] Processing chunk [0-58] (58 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [116-174] (58 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 173, current team size = 2
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 173 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-58] (58 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-1] Processing chunk [58-116] (58 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [116-173] (57 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 172, current team size = 3
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 172 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-1] Processing chunk [58-116] (58 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [116-172] (56 candidates)[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-58] (58 candidates)
+
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 40.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 171, current team size = 4
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 171 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [57-114] (57 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-1] Processing chunk [0-57] (57 candidates)[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [114-171] (57 candidates)
+
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 39.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 169, current team size = 1
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 169 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-57] (57 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-4] Processing chunk [57-114] (57 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [114-169] (55 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 168, current team size = 2
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 168 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-56] (56 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-4] Processing chunk [56-112] (56 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [112-168] (56 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 167, current team size = 3
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 167 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-4] Processing chunk [56-112] (56 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [112-167] (55 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-56] (56 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 40.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 166, current team size = 4
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 166 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-1] Processing chunk [56-112] (56 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-3] Processing chunk [112-166] (54 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-56] (56 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 39.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 164, current team size = 1
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 164 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-1] Processing chunk [0-55] (55 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [110-164] (54 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [55-110] (55 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 163, current team size = 2
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 163 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-1] Processing chunk [0-55] (55 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-4] Processing chunk [55-110] (55 candidates)[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-3] Processing chunk [110-163] (53 candidates)
+
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 49.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 162, current team size = 3
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 162 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [54-108] (54 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-1] Processing chunk [0-54] (54 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [108-162] (54 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 39.67
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 161, current team size = 4
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 161 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-1] Processing chunk [54-108] (54 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-54] (54 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [108-161] (53 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 38.75
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 159, current team size = 1
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 159 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [53-106] (53 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-1] Processing chunk [0-53] (53 candidates)[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [106-159] (53 candidates)
+
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 158, current team size = 2
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 158 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-1] Processing chunk [53-106] (53 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-53] (53 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [106-158] (52 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 49.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 157, current team size = 3
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 157 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [53-106] (53 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-4] Processing chunk [106-157] (51 candidates)[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-1] Processing chunk [0-53] (53 candidates)
+
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 39.67
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 156, current team size = 4
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 156 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-4] Processing chunk [52-104] (52 candidates)[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-52] (52 candidates)
+
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [104-156] (52 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 39.75
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 154, current team size = 1
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 154 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-52] (52 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-4] Processing chunk [52-104] (52 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [104-154] (50 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 153, current team size = 2
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 153 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-3] Processing chunk [0-51] (51 candidates)[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-4] Processing chunk [51-102] (51 candidates)
+
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [102-153] (51 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 50.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 152, current team size = 3
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 152 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-51] (51 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-1] Processing chunk [102-152] (50 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-3] Processing chunk [51-102] (51 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 40.00
+[2025-12-03 22:20:11] [INFO] PARALLEL mode – candidates = 151, current team size = 4
+[2025-12-03 22:20:11] [INFO] → PARALLEL: Splitting 151 candidates across 3 threads
+[2025-12-03 22:20:11] [INFO]    [Thread-1/pool-1-thread-1] Processing chunk [51-102] (51 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-0/pool-1-thread-4] Processing chunk [0-51] (51 candidates)
+[2025-12-03 22:20:11] [INFO]    [Thread-2/pool-1-thread-3] Processing chunk [102-151] (49 candidates)
+[2025-12-03 22:20:11] [INFO] → PARALLEL complete: Best overall score: 39.00
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 149 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 148 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 147 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 146 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 144 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 143 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 142 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 141 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 139 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 138 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 137 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 136 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 134 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 133 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 132 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 131 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 129 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 128 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 127 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 126 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 124 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 123 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 122 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 121 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 119 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 118 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 117 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 116 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 114 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 113 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 112 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 111 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 109 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 108 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 107 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 106 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 104 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 103 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 102 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 101 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 99 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 98 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 97 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 96 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 94 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 93 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 92 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 91 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 89 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 88 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 87 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 86 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 84 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 83 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 82 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 81 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 79 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 78 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 77 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 76 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 74 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 73 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 72 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 71 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 69 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 68 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 67 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 66 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 64 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 63 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 62 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 61 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 59 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 58 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 57 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 56 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 54 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 53 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 52 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 51 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 49 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 48 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 47 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 46 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 44 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 43 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 42 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 41 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 39 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 38 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 37 candidates left (team size = 3)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 36 candidates left (team size = 4)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 34 candidates left (team size = 1)
+[2025-12-03 22:20:11] [INFO] Sequential fallback – only 33 candidates left (team size = 2)
+[2025-12-03 22:20:11] [INFO] Team formation completed in 52ms
+[2025-12-03 22:20:11] [INFO] Teams are ready!
+[2025-12-03 22:20:16] [INFO] User selected: View Teams
+[2025-12-03 22:20:16] [INFO] Viewing all teams
+[2025-12-03 22:23:14] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 22:23:14] [INFO] Application started by user
+[2025-12-03 22:23:16] [INFO] User selected Organizer role
+[2025-12-03 22:23:16] [INFO] Entered Organizer Menu
+[2025-12-03 22:23:20] [INFO] User selected: Form Teams
+[2025-12-03 22:23:20] [INFO] Started team formation process
+[2025-12-03 22:23:36] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-03 22:23:36] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-03 22:23:36] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-03 22:23:36] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-03 22:23:36] [INFO] Thread-0 completed
+[2025-12-03 22:23:36] [INFO] Thread-1 completed
+[2025-12-03 22:23:36] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-03 22:23:36] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-03 22:23:36] [INFO] Thread-3 completed
+[2025-12-03 22:23:36] [INFO] Thread-2 completed
+[2025-12-03 22:23:36] [INFO] COMPLETED: CSV read in 13ms
+[2025-12-03 22:23:36] [INFO] Starting team formation with 200 participants
+[2025-12-03 22:23:36] [INFO] ============================================================
+[2025-12-03 22:23:36] [INFO] TEAM FORMATION START: 200 participants
+[2025-12-03 22:23:36] [INFO] Mode: PARALLEL ENABLED
+[2025-12-03 22:23:36] [INFO] ============================================================
+[2025-12-03 22:23:36] [INFO] ▶ Team 1: Using PARALLEL mode (199 candidates)
+[2025-12-03 22:23:36] [INFO] ▶ Switching to SEQUENTIAL mode (candidates dropped below 150)
+[2025-12-03 22:23:36] [INFO] ============================================================
+[2025-12-03 22:23:36] [INFO] TEAM FORMATION COMPLETE
+[2025-12-03 22:23:36] [INFO] Teams formed: 40
+[2025-12-03 22:23:36] [INFO] Parallel operations: 40
+[2025-12-03 22:23:36] [INFO] Sequential operations: 92
+[2025-12-03 22:23:36] [INFO] Parallelization rate: 30.3%
+[2025-12-03 22:23:36] [INFO] ============================================================
+[2025-12-03 22:23:36] [INFO] Team formation completed in 34ms
+[2025-12-03 22:23:36] [INFO] Teams are ready!
+[2025-12-03 22:23:41] [INFO] User selected: View Teams
+[2025-12-03 22:23:41] [INFO] Viewing all teams
+[2025-12-03 22:28:30] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 22:28:30] [INFO] Application started by user
+[2025-12-03 22:28:32] [INFO] User selected Organizer role
+[2025-12-03 22:28:32] [INFO] Entered Organizer Menu
+[2025-12-03 22:28:52] [INFO] User selected: Form Teams
+[2025-12-03 22:28:52] [INFO] Started team formation process
+[2025-12-03 22:28:55] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-03 22:28:55] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-03 22:28:55] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-03 22:28:55] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-03 22:28:55] [INFO] Thread-0 completed
+[2025-12-03 22:28:55] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-03 22:28:55] [INFO] Thread-2 completed
+[2025-12-03 22:28:55] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-03 22:28:55] [INFO] Thread-3 completed
+[2025-12-03 22:28:55] [INFO] Thread-1 completed
+[2025-12-03 22:28:55] [INFO] COMPLETED: CSV read in 14ms
+[2025-12-03 22:28:55] [INFO] Starting team formation with 200 participants
+[2025-12-03 22:28:55] [INFO] ============================================================
+[2025-12-03 22:28:55] [INFO] TEAM FORMATION START: 200 participants
+[2025-12-03 22:28:55] [INFO] Mode: PARALLEL ENABLED
+[2025-12-03 22:28:55] [INFO] ============================================================
+[2025-12-03 22:28:55] [INFO] Team 1: 199 candidates → 7 threads (~29 per chunk)
+[2025-12-03 22:28:55] [INFO] Team 1: 198 candidates → 7 threads (~29 per chunk)
+[2025-12-03 22:28:55] [INFO] Team 1: 197 candidates → 7 threads (~29 per chunk)
+[2025-12-03 22:28:55] [INFO] Team 1: 196 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:28:55] [INFO] Team 2: 194 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:28:55] [INFO] Team 2: 193 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:28:55] [INFO] Team 2: 192 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:28:55] [INFO] Team 2: 191 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:28:55] [INFO] Team 3: 189 candidates → 7 threads (~27 per chunk)
+[2025-12-03 22:28:55] [INFO] Team 3: 188 candidates → 7 threads (~27 per chunk)
+[2025-12-03 22:28:55] [INFO] Team 3: 187 candidates → 7 threads (~27 per chunk)
+[2025-12-03 22:28:55] [INFO] Team 3: 186 candidates → 7 threads (~27 per chunk)
+[2025-12-03 22:28:55] [INFO] Switched to sequential mode (149 candidates < 150 threshold)
+[2025-12-03 22:28:55] [INFO] ============================================================
+[2025-12-03 22:28:55] [INFO] TEAM FORMATION COMPLETE
+[2025-12-03 22:28:55] [INFO] Teams formed: 40
+[2025-12-03 22:28:55] [INFO] Parallel operations: 40
+[2025-12-03 22:28:55] [INFO] Sequential operations: 94
+[2025-12-03 22:28:55] [INFO] Parallelization rate: 29.9%
+[2025-12-03 22:28:55] [INFO] ============================================================
+[2025-12-03 22:28:55] [INFO] Team formation completed in 35ms
+[2025-12-03 22:28:55] [INFO] Teams are ready!
+[2025-12-03 22:29:06] [INFO] User selected: View Teams
+[2025-12-03 22:29:06] [INFO] Viewing all teams
+[2025-12-03 22:32:23] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 22:32:23] [INFO] Application started by user
+[2025-12-03 22:32:25] [INFO] User selected Organizer role
+[2025-12-03 22:32:25] [INFO] Entered Organizer Menu
+[2025-12-03 22:32:27] [INFO] User selected: Form Teams
+[2025-12-03 22:32:27] [INFO] Started team formation process
+[2025-12-03 22:32:36] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-03 22:32:36] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-03 22:32:36] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-03 22:32:36] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-03 22:32:36] [INFO] Thread-0 completed
+[2025-12-03 22:32:36] [INFO] Thread-1 completed
+[2025-12-03 22:32:36] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-03 22:32:36] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-03 22:32:36] [INFO] Thread-2 completed
+[2025-12-03 22:32:36] [INFO] Thread-3 completed
+[2025-12-03 22:32:36] [INFO] COMPLETED: CSV read in 13ms
+[2025-12-03 22:32:36] [INFO] Starting team formation with 200 participants
+[2025-12-03 22:32:36] [INFO] ============================================================
+[2025-12-03 22:32:36] [INFO] TEAM FORMATION START: 200 participants
+[2025-12-03 22:32:36] [INFO] Mode: PARALLEL ENABLED
+[2025-12-03 22:32:36] [INFO] ============================================================
+[2025-12-03 22:32:36] [INFO] Team 1: 199 candidates → 7 threads (~29 per chunk)
+[2025-12-03 22:32:36] [INFO] Team 1: 198 candidates → 7 threads (~29 per chunk)
+[2025-12-03 22:32:36] [INFO] Team 1: 197 candidates → 7 threads (~29 per chunk)
+[2025-12-03 22:32:36] [INFO] Team 1: 196 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:32:36] [INFO] Team 2: 194 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:32:36] [INFO] Team 2: 193 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:32:36] [INFO] Team 2: 192 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:32:36] [INFO] Team 2: 191 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:32:36] [INFO] Team 3: 189 candidates → 7 threads (~27 per chunk)
+[2025-12-03 22:32:36] [INFO] Team 3: 188 candidates → 7 threads (~27 per chunk)
+[2025-12-03 22:32:36] [INFO] Team 3: 187 candidates → 7 threads (~27 per chunk)
+[2025-12-03 22:32:36] [INFO] Team 3: 186 candidates → 7 threads (~27 per chunk)
+[2025-12-03 22:32:36] [INFO] Switched to sequential mode (149 candidates < 150 threshold)
+[2025-12-03 22:32:36] [INFO] ============================================================
+[2025-12-03 22:32:36] [INFO] TEAM FORMATION COMPLETE
+[2025-12-03 22:32:36] [INFO] Teams formed: 40
+[2025-12-03 22:32:36] [INFO] ============================================================
+[2025-12-03 22:32:36] [INFO] Team formation completed in 34ms
+[2025-12-03 22:32:36] [INFO] Teams are ready!
+[2025-12-03 22:32:40] [INFO] User selected: View Teams
+[2025-12-03 22:32:40] [INFO] Viewing all teams
+[2025-12-03 22:44:39] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 22:44:39] [INFO] Application started by user
+[2025-12-03 22:44:41] [INFO] User selected Organizer role
+[2025-12-03 22:44:41] [INFO] Entered Organizer Menu
+[2025-12-03 22:44:43] [INFO] User selected: Form Teams
+[2025-12-03 22:44:43] [INFO] Started team formation process
+[2025-12-03 22:44:57] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-03 22:44:57] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-03 22:44:58] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-03 22:44:58] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-03 22:44:58] [INFO] Thread-0 completed[2025-12-03 22:44:58] [INFO] Thread-1 completed
+
+[2025-12-03 22:44:58] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-03 22:44:58] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-03 22:44:58] [INFO] Thread-2 completed
+[2025-12-03 22:44:58] [INFO] Thread-3 completed
+[2025-12-03 22:44:58] [INFO] COMPLETED: CSV read in 13ms
+[2025-12-03 22:44:58] [INFO] Starting team formation with 200 participants
+[2025-12-03 22:44:58] [INFO] ============================================================
+[2025-12-03 22:44:58] [INFO] TEAM FORMATION START: 200 participants
+[2025-12-03 22:44:58] [INFO] Mode: PARALLEL ENABLED
+[2025-12-03 22:44:58] [INFO] ============================================================
+[2025-12-03 22:44:58] [INFO] Team 1: 199 candidates → 3 threads (~67 per chunk)
+[2025-12-03 22:44:58] [INFO] Team 1: 198 candidates → 3 threads (~66 per chunk)
+[2025-12-03 22:44:58] [INFO] Team 1: 197 candidates → 3 threads (~66 per chunk)
+[2025-12-03 22:44:58] [INFO] Team 1: 196 candidates → 3 threads (~66 per chunk)
+[2025-12-03 22:44:58] [INFO] Team 2: 194 candidates → 3 threads (~65 per chunk)
+[2025-12-03 22:44:58] [INFO] Team 2: 193 candidates → 3 threads (~65 per chunk)
+[2025-12-03 22:44:58] [INFO] Team 2: 192 candidates → 3 threads (~64 per chunk)
+[2025-12-03 22:44:58] [INFO] Team 2: 191 candidates → 3 threads (~64 per chunk)
+[2025-12-03 22:44:58] [INFO] Team 3: 189 candidates → 3 threads (~63 per chunk)
+[2025-12-03 22:44:58] [INFO] Team 3: 188 candidates → 3 threads (~63 per chunk)
+[2025-12-03 22:44:58] [INFO] Team 3: 187 candidates → 3 threads (~63 per chunk)
+[2025-12-03 22:44:58] [INFO] Team 3: 186 candidates → 3 threads (~62 per chunk)
+[2025-12-03 22:44:58] [INFO] Switched to sequential mode (149 candidates < 150 threshold)
+[2025-12-03 22:44:58] [INFO] ============================================================
+[2025-12-03 22:44:58] [INFO] TEAM FORMATION COMPLETE
+[2025-12-03 22:44:58] [INFO] Teams formed: 40
+[2025-12-03 22:44:58] [INFO] ============================================================
+[2025-12-03 22:44:58] [INFO] Team formation completed in 45ms
+[2025-12-03 22:44:58] [INFO] Teams are ready!
+[2025-12-03 22:45:01] [INFO] User selected: View Teams
+[2025-12-03 22:45:01] [INFO] Viewing all teams
+[2025-12-03 22:45:32] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 22:45:32] [INFO] Application started by user
+[2025-12-03 22:45:38] [INFO] User selected Organizer role
+[2025-12-03 22:45:38] [INFO] Entered Organizer Menu
+[2025-12-03 22:45:50] [INFO] User selected: Form Teams
+[2025-12-03 22:45:50] [INFO] Started team formation process
+[2025-12-03 22:46:05] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-03 22:46:05] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-03 22:46:05] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-03 22:46:05] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-03 22:46:05] [INFO] Thread-0 completed
+[2025-12-03 22:46:05] [INFO] Thread-1 completed
+[2025-12-03 22:46:05] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-03 22:46:05] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-03 22:46:05] [INFO] Thread-3 completed
+[2025-12-03 22:46:05] [INFO] Thread-2 completed
+[2025-12-03 22:46:05] [INFO] COMPLETED: CSV read in 12ms
+[2025-12-03 22:46:05] [INFO] Starting team formation with 200 participants
+[2025-12-03 22:46:05] [INFO] ============================================================
+[2025-12-03 22:46:05] [INFO] TEAM FORMATION START: 200 participants
+[2025-12-03 22:46:05] [INFO] Mode: PARALLEL ENABLED
+[2025-12-03 22:46:05] [INFO] ============================================================
+[2025-12-03 22:46:05] [INFO] Team 1: 199 candidates → 7 threads (~29 per chunk)
+[2025-12-03 22:46:05] [INFO] Team 1: 198 candidates → 7 threads (~29 per chunk)
+[2025-12-03 22:46:05] [INFO] Team 1: 197 candidates → 7 threads (~29 per chunk)
+[2025-12-03 22:46:05] [INFO] Team 1: 196 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:46:05] [INFO] Team 2: 194 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:46:05] [INFO] Team 2: 193 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:46:05] [INFO] Team 2: 192 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:46:05] [INFO] Team 2: 191 candidates → 7 threads (~28 per chunk)
+[2025-12-03 22:46:05] [INFO] Team 3: 189 candidates → 7 threads (~27 per chunk)
+[2025-12-03 22:46:05] [INFO] Team 3: 188 candidates → 7 threads (~27 per chunk)
+[2025-12-03 22:46:05] [INFO] Team 3: 187 candidates → 7 threads (~27 per chunk)
+[2025-12-03 22:46:05] [INFO] Team 3: 186 candidates → 7 threads (~27 per chunk)
+[2025-12-03 22:46:05] [INFO] Switched to sequential mode (149 candidates < 150 threshold)
+[2025-12-03 22:46:05] [INFO] ============================================================
+[2025-12-03 22:46:05] [INFO] TEAM FORMATION COMPLETE
+[2025-12-03 22:46:05] [INFO] Teams formed: 40
+[2025-12-03 22:46:05] [INFO] ============================================================
+[2025-12-03 22:46:05] [INFO] Team formation completed in 34ms
+[2025-12-03 22:46:05] [INFO] Teams are ready!
+[2025-12-03 22:46:09] [INFO] User selected: View Teams
+[2025-12-03 22:46:09] [INFO] Viewing all teams
+[2025-12-03 23:00:18] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 23:00:18] [INFO] Application started by user
+[2025-12-03 23:00:21] [INFO] User selected Organizer role
+[2025-12-03 23:00:21] [INFO] Entered Organizer Menu
+[2025-12-03 23:00:24] [INFO] User selected: Form Teams
+[2025-12-03 23:00:24] [INFO] Started team formation process
+[2025-12-03 23:00:42] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\50_particip.csv
+[2025-12-03 23:00:42] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-03 23:00:42] [INFO] Thread-1 processing lines 13 to 26
+[2025-12-03 23:00:42] [INFO] Thread-0 processing lines 0 to 13
+[2025-12-03 23:00:42] [INFO] Thread-0 completed
+[2025-12-03 23:00:42] [INFO] Thread-1 completed
+[2025-12-03 23:00:42] [INFO] Thread-2 processing lines 26 to 39
+[2025-12-03 23:00:42] [INFO] Thread-3 processing lines 39 to 50
+[2025-12-03 23:00:42] [INFO] Thread-2 completed
+[2025-12-03 23:00:42] [INFO] Thread-3 completed
+[2025-12-03 23:00:42] [INFO] COMPLETED: CSV read in 17ms
+[2025-12-03 23:00:42] [INFO] Starting team formation with 50 participants
+[2025-12-03 23:00:42] [INFO] ============================================================
+[2025-12-03 23:00:42] [INFO] TEAM FORMATION START: 50 participants
+[2025-12-03 23:00:42] [INFO] Mode: PARALLEL ENABLED
+[2025-12-03 23:00:42] [INFO] ============================================================
+[2025-12-03 23:00:42] [INFO] ============================================================
+[2025-12-03 23:00:42] [INFO] TEAM FORMATION COMPLETE
+[2025-12-03 23:00:42] [INFO] Teams formed: 10
+[2025-12-03 23:00:42] [INFO] ============================================================
+[2025-12-03 23:00:42] [INFO] Team formation completed in 14ms
+[2025-12-03 23:00:42] [INFO] Teams are ready!
+[2025-12-03 23:00:46] [INFO] User selected: View Teams
+[2025-12-03 23:00:46] [INFO] Viewing all teams
+[2025-12-03 23:07:16] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 23:07:16] [INFO] Application started by user
+[2025-12-03 23:07:21] [INFO] User selected Organizer role
+[2025-12-03 23:07:21] [INFO] Entered Organizer Menu
+[2025-12-03 23:07:24] [INFO] User selected: Form Teams
+[2025-12-03 23:07:24] [INFO] Started team formation process
+[2025-12-03 23:07:33] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\50_particip.csv
+[2025-12-03 23:07:33] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-03 23:07:33] [INFO] Thread-1 processing lines 13 to 26
+[2025-12-03 23:07:33] [INFO] Thread-0 processing lines 0 to 13
+[2025-12-03 23:07:33] [INFO] Thread-1 completed
+[2025-12-03 23:07:33] [INFO] Thread-2 processing lines 26 to 39
+[2025-12-03 23:07:33] [INFO] Thread-2 completed
+[2025-12-03 23:07:33] [INFO] Thread-3 processing lines 39 to 50
+[2025-12-03 23:07:33] [INFO] Thread-3 completed
+[2025-12-03 23:07:33] [INFO] Thread-0 completed
+[2025-12-03 23:07:33] [INFO] COMPLETED: CSV read in 12ms
+[2025-12-03 23:07:33] [INFO] Starting team formation with 50 participants
+[2025-12-03 23:07:33] [INFO] ============================================================
+[2025-12-03 23:07:33] [INFO] TEAM FORMATION START: 50 participants
+[2025-12-03 23:07:33] [INFO] Mode: SEQUENTIAL ONLY
+[2025-12-03 23:07:33] [INFO] ============================================================
+[2025-12-03 23:07:33] [INFO] ============================================================
+[2025-12-03 23:07:33] [INFO] TEAM FORMATION COMPLETE
+[2025-12-03 23:07:33] [INFO] Teams formed: 10
+[2025-12-03 23:07:33] [INFO] ============================================================
+[2025-12-03 23:07:33] [INFO] Team formation completed in 11ms
+[2025-12-03 23:07:33] [INFO] Teams are ready!
+[2025-12-03 23:07:35] [INFO] User selected: View Teams
+[2025-12-03 23:07:35] [INFO] Viewing all teams
+[2025-12-03 23:14:18] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-03 23:14:18] [INFO] Application started by user
+[2025-12-03 23:14:19] [INFO] User selected Organizer role
+[2025-12-03 23:14:19] [INFO] Entered Organizer Menu
+[2025-12-03 23:14:22] [INFO] User selected: Form Teams
+[2025-12-03 23:14:22] [INFO] Started team formation process
+[2025-12-03 23:14:34] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-03 23:14:34] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-03 23:14:34] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-03 23:14:34] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-03 23:14:34] [INFO] Thread-0 completed[2025-12-03 23:14:34] [INFO] Thread-1 completed
+
+[2025-12-03 23:14:34] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-03 23:14:34] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-03 23:14:34] [INFO] Thread-2 completed
+[2025-12-03 23:14:34] [INFO] Thread-3 completed
+[2025-12-03 23:14:34] [INFO] COMPLETED: CSV read in 15ms
+[2025-12-03 23:14:34] [INFO] Starting team formation with 200 participants
+[2025-12-03 23:14:34] [INFO] ============================================================
+[2025-12-03 23:14:34] [INFO] TEAM FORMATION START: 200 participants
+[2025-12-03 23:14:34] [INFO] Mode: PARALLEL ENABLED
+[2025-12-03 23:14:34] [INFO] ============================================================
+[2025-12-03 23:14:34] [INFO] Team 1: 199 candidates → 7 threads (~29 per chunk)
+[2025-12-03 23:14:34] [INFO] Team 1: 198 candidates → 7 threads (~29 per chunk)
+[2025-12-03 23:14:34] [INFO] Team 1: 197 candidates → 7 threads (~29 per chunk)
+[2025-12-03 23:14:34] [INFO] Team 1: 196 candidates → 7 threads (~28 per chunk)
+[2025-12-03 23:14:34] [INFO] Team 2: 194 candidates → 7 threads (~28 per chunk)
+[2025-12-03 23:14:34] [INFO] Team 2: 193 candidates → 7 threads (~28 per chunk)
+[2025-12-03 23:14:34] [INFO] Team 2: 192 candidates → 7 threads (~28 per chunk)
+[2025-12-03 23:14:34] [INFO] Team 2: 191 candidates → 7 threads (~28 per chunk)
+[2025-12-03 23:14:34] [INFO] Team 3: 189 candidates → 7 threads (~27 per chunk)
+[2025-12-03 23:14:34] [INFO] Team 3: 188 candidates → 7 threads (~27 per chunk)
+[2025-12-03 23:14:34] [INFO] Team 3: 187 candidates → 7 threads (~27 per chunk)
+[2025-12-03 23:14:34] [INFO] Team 3: 186 candidates → 7 threads (~27 per chunk)
+[2025-12-03 23:14:34] [INFO] Switched to sequential mode (149 candidates < 150 threshold)
+[2025-12-03 23:14:34] [INFO] ============================================================
+[2025-12-03 23:14:34] [INFO] TEAM FORMATION COMPLETE
+[2025-12-03 23:14:34] [INFO] Teams formed: 40
+[2025-12-03 23:14:34] [INFO] ============================================================
+[2025-12-03 23:14:34] [INFO] Team formation completed in 38ms
+[2025-12-03 23:14:34] [INFO] Teams are ready!
+[2025-12-03 23:14:35] [INFO] User selected: Remove Participant
+[2025-12-03 23:14:35] [INFO] Started participant removal process
+[2025-12-04 08:20:05] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-04 08:20:05] [INFO] Application started by user
+[2025-12-04 08:20:08] [INFO] User selected Organizer role
+[2025-12-04 08:20:08] [INFO] Entered Organizer Menu
+[2025-12-04 08:20:26] [INFO] User selected: Form Teams
+[2025-12-04 08:20:26] [INFO] Started team formation process
+[2025-12-04 08:20:31] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\50_particip.csv
+[2025-12-04 08:20:31] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-04 08:20:31] [INFO] Thread-1 processing lines 13 to 26
+[2025-12-04 08:20:31] [INFO] Thread-0 processing lines 0 to 13
+[2025-12-04 08:20:31] [INFO] Thread-0 completed
+[2025-12-04 08:20:31] [INFO] Thread-1 completed
+[2025-12-04 08:20:31] [INFO] Thread-3 processing lines 39 to 50
+[2025-12-04 08:20:31] [INFO] Thread-2 processing lines 26 to 39
+[2025-12-04 08:20:31] [INFO] Thread-3 completed
+[2025-12-04 08:20:31] [INFO] Thread-2 completed
+[2025-12-04 08:20:31] [INFO] COMPLETED: CSV read in 47ms
+[2025-12-04 08:20:31] [INFO] Starting team formation with 50 participants
+[2025-12-04 08:20:31] [INFO] ============================================================
+[2025-12-04 08:20:31] [INFO] TEAM FORMATION START: 50 participants
+[2025-12-04 08:20:31] [INFO] Mode: SEQUENTIAL ONLY
+[2025-12-04 08:20:31] [INFO] ============================================================
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (49 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (48 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (47 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (46 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (44 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (43 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (42 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (41 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (39 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (38 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (37 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (36 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (34 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (33 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (32 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (31 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (29 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (28 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (27 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (26 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (24 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (23 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (22 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (21 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (19 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (18 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (17 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (16 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (14 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (13 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (12 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (11 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (9 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] Switched to sequential mode (8 candidates < 150 threshold)
+[2025-12-04 08:20:31] [INFO] ============================================================
+[2025-12-04 08:20:31] [INFO] TEAM FORMATION COMPLETE
+[2025-12-04 08:20:31] [INFO] Teams formed: 10
+[2025-12-04 08:20:31] [INFO] ============================================================
+[2025-12-04 08:20:31] [INFO] Team formation completed in 50ms
+[2025-12-04 08:20:31] [INFO] Teams are ready!
+[2025-12-04 08:20:42] [INFO] User selected: View Teams
+[2025-12-04 08:20:42] [INFO] Viewing all teams
+[2025-12-04 08:21:16] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-04 08:21:16] [INFO] Application started by user
+[2025-12-04 08:21:18] [INFO] User selected Organizer role
+[2025-12-04 08:21:18] [INFO] Entered Organizer Menu
+[2025-12-04 08:21:21] [INFO] User selected: Form Teams
+[2025-12-04 08:21:21] [INFO] Started team formation process
+[2025-12-04 08:21:37] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-04 08:21:37] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-04 08:21:37] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-04 08:21:37] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-04 08:21:37] [INFO] Thread-1 completed
+[2025-12-04 08:21:37] [INFO] Thread-0 completed
+[2025-12-04 08:21:37] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-04 08:21:37] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-04 08:21:37] [INFO] Thread-2 completed
+[2025-12-04 08:21:37] [INFO] Thread-3 completed
+[2025-12-04 08:21:37] [INFO] COMPLETED: CSV read in 14ms
+[2025-12-04 08:21:37] [INFO] Starting team formation with 200 participants
+[2025-12-04 08:21:37] [INFO] ============================================================
+[2025-12-04 08:21:37] [INFO] TEAM FORMATION START: 200 participants
+[2025-12-04 08:21:37] [INFO] Mode: PARALLEL ENABLED
+[2025-12-04 08:21:37] [INFO] ============================================================
+[2025-12-04 08:21:37] [INFO] Team 1: 199 candidates → 7 threads (~29 per chunk)
+[2025-12-04 08:21:37] [INFO] Team 1: 198 candidates → 7 threads (~29 per chunk)
+[2025-12-04 08:21:37] [INFO] Team 1: 197 candidates → 7 threads (~29 per chunk)
+[2025-12-04 08:21:37] [INFO] Team 1: 196 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:21:37] [INFO] Team 2: 194 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:21:37] [INFO] Team 2: 193 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:21:37] [INFO] Team 2: 192 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:21:37] [INFO] Team 2: 191 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:21:37] [INFO] Team 3: 189 candidates → 7 threads (~27 per chunk)
+[2025-12-04 08:21:37] [INFO] Team 3: 188 candidates → 7 threads (~27 per chunk)
+[2025-12-04 08:21:37] [INFO] Team 3: 187 candidates → 7 threads (~27 per chunk)
+[2025-12-04 08:21:37] [INFO] Team 3: 186 candidates → 7 threads (~27 per chunk)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (149 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (148 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (147 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (146 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (144 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (143 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (142 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (141 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (139 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (138 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (137 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (136 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (134 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (133 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (132 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (131 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (129 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (128 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (127 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (126 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (124 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (123 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (122 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (121 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (119 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (118 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (117 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (116 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (114 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (113 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (112 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (111 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (109 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (108 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (107 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (106 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (104 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (103 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (102 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (101 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (99 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (98 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (97 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (96 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (94 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (93 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (92 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (91 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (89 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (88 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (87 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (86 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (84 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (83 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (82 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (81 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (79 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (78 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (77 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (76 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (74 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (73 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (72 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (71 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (69 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (68 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (67 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (66 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (64 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (63 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (62 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (61 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (59 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (58 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (57 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (56 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (54 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (53 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (52 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (51 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (49 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (48 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (47 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (46 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (44 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (43 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (42 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (41 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (39 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (38 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (37 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (36 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (34 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] Switched to sequential mode (33 candidates < 150 threshold)
+[2025-12-04 08:21:37] [INFO] ============================================================
+[2025-12-04 08:21:37] [INFO] TEAM FORMATION COMPLETE
+[2025-12-04 08:21:37] [INFO] Teams formed: 40
+[2025-12-04 08:21:37] [INFO] ============================================================
+[2025-12-04 08:21:37] [INFO] Team formation completed in 41ms
+[2025-12-04 08:21:37] [INFO] Teams are ready!
+[2025-12-04 08:21:45] [INFO] User selected: View Teams
+[2025-12-04 08:21:45] [INFO] Viewing all teams
+[2025-12-04 08:22:13] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-04 08:22:13] [INFO] Application started by user
+[2025-12-04 08:22:34] [INFO] User selected Organizer role
+[2025-12-04 08:22:34] [INFO] Entered Organizer Menu
+[2025-12-04 08:22:36] [INFO] User selected: Form Teams
+[2025-12-04 08:22:36] [INFO] Started team formation process
+[2025-12-04 08:22:43] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\50_particip.csv
+[2025-12-04 08:22:43] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-04 08:22:43] [INFO] Thread-0 processing lines 0 to 13
+[2025-12-04 08:22:43] [INFO] Thread-1 processing lines 13 to 26
+[2025-12-04 08:22:43] [INFO] Thread-1 completed
+[2025-12-04 08:22:43] [INFO] Thread-0 completed
+[2025-12-04 08:22:43] [INFO] Thread-2 processing lines 26 to 39
+[2025-12-04 08:22:43] [INFO] Thread-3 processing lines 39 to 50
+[2025-12-04 08:22:43] [INFO] Thread-2 completed
+[2025-12-04 08:22:43] [INFO] Thread-3 completed
+[2025-12-04 08:22:43] [INFO] COMPLETED: CSV read in 15ms
+[2025-12-04 08:22:43] [INFO] Starting team formation with 50 participants
+[2025-12-04 08:22:43] [INFO] ============================================================
+[2025-12-04 08:22:43] [INFO] TEAM FORMATION START: 50 participants
+[2025-12-04 08:22:43] [INFO] Mode: SEQUENTIAL ONLY
+[2025-12-04 08:22:43] [INFO] ============================================================
+[2025-12-04 08:22:43] [INFO] ============================================================
+[2025-12-04 08:22:43] [INFO] TEAM FORMATION COMPLETE
+[2025-12-04 08:22:43] [INFO] Teams formed: 10
+[2025-12-04 08:22:43] [INFO] ============================================================
+[2025-12-04 08:22:43] [INFO] Team formation completed in 10ms
+[2025-12-04 08:22:43] [INFO] Teams are ready!
+[2025-12-04 08:22:54] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-04 08:22:54] [INFO] Application started by user
+[2025-12-04 08:22:57] [INFO] User selected Organizer role
+[2025-12-04 08:22:57] [INFO] Entered Organizer Menu
+[2025-12-04 08:23:00] [INFO] User selected: Form Teams
+[2025-12-04 08:23:00] [INFO] Started team formation process
+[2025-12-04 08:23:06] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-04 08:23:06] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-04 08:23:06] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-04 08:23:06] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-04 08:23:06] [INFO] Thread-0 completed[2025-12-04 08:23:06] [INFO] Thread-1 completed
+
+[2025-12-04 08:23:06] [INFO] Thread-3 processing lines 150 to 200[2025-12-04 08:23:06] [INFO] Thread-2 processing lines 100 to 150
+
+[2025-12-04 08:23:06] [INFO] Thread-3 completed
+[2025-12-04 08:23:06] [INFO] Thread-2 completed
+[2025-12-04 08:23:06] [INFO] COMPLETED: CSV read in 12ms
+[2025-12-04 08:23:06] [INFO] Starting team formation with 200 participants
+[2025-12-04 08:23:06] [INFO] ============================================================
+[2025-12-04 08:23:06] [INFO] TEAM FORMATION START: 200 participants
+[2025-12-04 08:23:06] [INFO] Mode: PARALLEL ENABLED
+[2025-12-04 08:23:06] [INFO] ============================================================
+[2025-12-04 08:23:06] [INFO] Team 1: 199 candidates → 7 threads (~29 per chunk)
+[2025-12-04 08:23:06] [INFO] Team 1: 198 candidates → 7 threads (~29 per chunk)
+[2025-12-04 08:23:06] [INFO] Team 1: 197 candidates → 7 threads (~29 per chunk)
+[2025-12-04 08:23:06] [INFO] Team 1: 196 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:23:06] [INFO] Team 2: 194 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:23:06] [INFO] Team 2: 193 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:23:06] [INFO] Team 2: 192 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:23:06] [INFO] Team 2: 191 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:23:06] [INFO] Team 3: 189 candidates → 7 threads (~27 per chunk)
+[2025-12-04 08:23:06] [INFO] Team 3: 188 candidates → 7 threads (~27 per chunk)
+[2025-12-04 08:23:06] [INFO] Team 3: 187 candidates → 7 threads (~27 per chunk)
+[2025-12-04 08:23:06] [INFO] Team 3: 186 candidates → 7 threads (~27 per chunk)
+[2025-12-04 08:23:06] [INFO] Switched to sequential mode (149 candidates < 150 threshold)
+[2025-12-04 08:23:06] [INFO] ============================================================
+[2025-12-04 08:23:06] [INFO] TEAM FORMATION COMPLETE
+[2025-12-04 08:23:06] [INFO] Teams formed: 40
+[2025-12-04 08:23:06] [INFO] ============================================================
+[2025-12-04 08:23:06] [INFO] Team formation completed in 35ms
+[2025-12-04 08:23:06] [INFO] Teams are ready!
+[2025-12-04 08:33:06] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-04 08:33:06] [INFO] Application started by user
+[2025-12-04 08:33:08] [INFO] User selected Organizer role
+[2025-12-04 08:33:08] [INFO] Entered Organizer Menu
+[2025-12-04 08:33:11] [INFO] User selected: Form Teams
+[2025-12-04 08:33:11] [INFO] Started team formation process
+[2025-12-04 08:33:19] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\50_particip.csv
+[2025-12-04 08:33:19] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-04 08:33:19] [INFO] Thread-1 processing lines 13 to 26
+[2025-12-04 08:33:19] [INFO] Thread-0 processing lines 0 to 13
+[2025-12-04 08:33:19] [INFO] Thread-0 completed
+[2025-12-04 08:33:19] [INFO] Thread-1 completed
+[2025-12-04 08:33:19] [INFO] Thread-2 processing lines 26 to 39[2025-12-04 08:33:19] [INFO] Thread-3 processing lines 39 to 50
+
+[2025-12-04 08:33:19] [INFO] Thread-3 completed
+[2025-12-04 08:33:19] [INFO] Thread-2 completed
+[2025-12-04 08:33:19] [INFO] COMPLETED: CSV read in 12ms
+[2025-12-04 08:33:19] [INFO] Starting team formation with 50 participants
+[2025-12-04 08:33:19] [INFO] ============================================================
+[2025-12-04 08:33:19] [INFO] TEAM FORMATION START: 50 participants
+[2025-12-04 08:33:19] [INFO] Mode: SEQUENTIAL
+[2025-12-04 08:33:19] [INFO] ============================================================
+[2025-12-04 08:33:19] [INFO] ============================================================
+[2025-12-04 08:33:19] [INFO] TEAM FORMATION COMPLETE
+[2025-12-04 08:33:19] [INFO] Teams formed: 10
+[2025-12-04 08:33:19] [INFO] ============================================================
+[2025-12-04 08:33:19] [INFO] Team formation completed in 13ms
+[2025-12-04 08:33:19] [INFO] Teams are ready!
+[2025-12-04 08:33:35] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-04 08:33:35] [INFO] Application started by user
+[2025-12-04 08:33:40] [INFO] User selected Organizer role
+[2025-12-04 08:33:40] [INFO] Entered Organizer Menu
+[2025-12-04 08:33:41] [INFO] User selected: Form Teams
+[2025-12-04 08:33:41] [INFO] Started team formation process
+[2025-12-04 08:33:53] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-04 08:33:53] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-04 08:33:53] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-04 08:33:53] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-04 08:33:53] [INFO] Thread-0 completed
+[2025-12-04 08:33:53] [INFO] Thread-1 completed
+[2025-12-04 08:33:53] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-04 08:33:53] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-04 08:33:53] [INFO] Thread-2 completed
+[2025-12-04 08:33:53] [INFO] Thread-3 completed
+[2025-12-04 08:33:53] [INFO] COMPLETED: CSV read in 13ms
+[2025-12-04 08:33:53] [INFO] Starting team formation with 200 participants
+[2025-12-04 08:33:53] [INFO] ============================================================
+[2025-12-04 08:33:53] [INFO] TEAM FORMATION START: 200 participants
+[2025-12-04 08:33:53] [INFO] Mode: PARALLEL
+[2025-12-04 08:33:53] [INFO] ============================================================
+[2025-12-04 08:33:53] [INFO] ============================================================
+[2025-12-04 08:33:53] [INFO] TEAM FORMATION COMPLETE
+[2025-12-04 08:33:53] [INFO] Teams formed: 40
+[2025-12-04 08:33:53] [INFO] ============================================================
+[2025-12-04 08:33:53] [INFO] Team formation completed in 29ms
+[2025-12-04 08:33:53] [INFO] Teams are ready!
+[2025-12-04 08:45:57] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-04 08:45:57] [INFO] Application started by user
+[2025-12-04 08:46:00] [INFO] User selected Organizer role
+[2025-12-04 08:46:00] [INFO] Entered Organizer Menu
+[2025-12-04 08:46:07] [INFO] User selected: Form Teams
+[2025-12-04 08:46:07] [INFO] Started team formation process
+[2025-12-04 08:46:14] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-04 08:46:14] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-04 08:46:14] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-04 08:46:14] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-04 08:46:14] [INFO] Thread-0 completed[2025-12-04 08:46:14] [INFO] Thread-1 completed
+
+[2025-12-04 08:46:14] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-04 08:46:14] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-04 08:46:14] [INFO] Thread-3 completed
+[2025-12-04 08:46:14] [INFO] Thread-2 completed
+[2025-12-04 08:46:14] [INFO] COMPLETED: CSV read in 15ms
+[2025-12-04 08:46:14] [INFO] Starting team formation with 200 participants
+[2025-12-04 08:46:14] [INFO] ============================================================
+[2025-12-04 08:46:14] [INFO] TEAM FORMATION START: 200 participants
+[2025-12-04 08:46:14] [INFO] Mode: PARALLEL ENABLED
+[2025-12-04 08:46:14] [INFO] ============================================================
+[2025-12-04 08:46:14] [INFO] Team 1: 199 candidates → 7 threads (~29 per chunk)
+[2025-12-04 08:46:14] [INFO] Team 1: 198 candidates → 7 threads (~29 per chunk)
+[2025-12-04 08:46:14] [INFO] Team 1: 197 candidates → 7 threads (~29 per chunk)
+[2025-12-04 08:46:14] [INFO] Team 1: 196 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:46:14] [INFO] Team 2: 194 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:46:14] [INFO] Team 2: 193 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:46:14] [INFO] Team 2: 192 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:46:14] [INFO] Team 2: 191 candidates → 7 threads (~28 per chunk)
+[2025-12-04 08:46:14] [INFO] Team 3: 189 candidates → 7 threads (~27 per chunk)
+[2025-12-04 08:46:14] [INFO] Team 3: 188 candidates → 7 threads (~27 per chunk)
+[2025-12-04 08:46:14] [INFO] Team 3: 187 candidates → 7 threads (~27 per chunk)
+[2025-12-04 08:46:14] [INFO] Team 3: 186 candidates → 7 threads (~27 per chunk)
+[2025-12-04 08:46:14] [INFO] ============================================================
+[2025-12-04 08:46:14] [INFO] TEAM FORMATION COMPLETE
+[2025-12-04 08:46:14] [INFO] Teams formed: 40
+[2025-12-04 08:46:14] [INFO] ============================================================
+[2025-12-04 08:46:14] [INFO] Team formation completed in 33ms
+[2025-12-04 08:46:14] [INFO] Teams are ready!
+[2025-12-04 09:04:05] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2025-12-04 09:04:05] [INFO] Application started by user
+[2025-12-04 09:04:08] [INFO] User selected Organizer role
+[2025-12-04 09:04:08] [INFO] Entered Organizer Menu
+[2025-12-04 09:04:10] [INFO] Started team formation process
+[2025-12-04 09:04:20] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\partcipant_200_.csv
+[2025-12-04 09:04:20] [INFO] START: ParallelFileReadCallable with 4 threads
+[2025-12-04 09:04:20] [INFO] Thread-0 processing lines 0 to 50
+[2025-12-04 09:04:20] [INFO] Thread-1 processing lines 50 to 100
+[2025-12-04 09:04:20] [INFO] Thread-0 completed[2025-12-04 09:04:20] [INFO] Thread-1 completed
+
+[2025-12-04 09:04:20] [INFO] Thread-2 processing lines 100 to 150
+[2025-12-04 09:04:20] [INFO] Thread-3 processing lines 150 to 200
+[2025-12-04 09:04:20] [INFO] Thread-2 completed
+[2025-12-04 09:04:20] [INFO] Thread-3 completed
+[2025-12-04 09:04:20] [INFO] COMPLETED: CSV read in 13ms
+[2025-12-04 09:04:20] [INFO] Starting team formation with 200 participants
+[2025-12-04 09:04:20] [INFO] ============================================================
+[2025-12-04 09:04:20] [INFO] TEAM FORMATION START: 200 participants
+[2025-12-04 09:04:20] [INFO] Mode: PARALLEL ENABLED
+[2025-12-04 09:04:20] [INFO] ============================================================
+[2025-12-04 09:04:20] [INFO] Team 1: 199 candidates → 7 threads (~29 per chunk)
+[2025-12-04 09:04:20] [INFO] Team 1: 198 candidates → 7 threads (~29 per chunk)
+[2025-12-04 09:04:20] [INFO] Team 1: 197 candidates → 7 threads (~29 per chunk)
+[2025-12-04 09:04:20] [INFO] Team 1: 196 candidates → 7 threads (~28 per chunk)
+[2025-12-04 09:04:20] [INFO] Team 2: 194 candidates → 7 threads (~28 per chunk)
+[2025-12-04 09:04:20] [INFO] Team 2: 193 candidates → 7 threads (~28 per chunk)
+[2025-12-04 09:04:20] [INFO] Team 2: 192 candidates → 7 threads (~28 per chunk)
+[2025-12-04 09:04:20] [INFO] Team 2: 191 candidates → 7 threads (~28 per chunk)
+[2025-12-04 09:04:20] [INFO] Team 3: 189 candidates → 7 threads (~27 per chunk)
+[2025-12-04 09:04:20] [INFO] Team 3: 188 candidates → 7 threads (~27 per chunk)
+[2025-12-04 09:04:20] [INFO] Team 3: 187 candidates → 7 threads (~27 per chunk)
+[2025-12-04 09:04:20] [INFO] Team 3: 186 candidates → 7 threads (~27 per chunk)
+[2025-12-04 09:04:20] [INFO] ============================================================
+[2025-12-04 09:04:20] [INFO] TEAM FORMATION COMPLETE
+[2025-12-04 09:04:20] [INFO] Teams formed: 40
+[2025-12-04 09:04:20] [INFO] ============================================================
+[2025-12-04 09:04:20] [INFO] Team formation completed in 36ms
+[2025-12-04 09:04:20] [INFO] Teams are ready!
+[2025-12-04 09:04:30] [INFO] Viewing all teams
+[2026-01-21 00:32:49] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2026-01-21 00:32:49] [INFO] Application started by user
+[2026-01-21 00:32:53] [INFO] User selected Organizer role
+[2026-01-21 00:32:53] [INFO] Entered Organizer Menu
+[2026-01-21 00:32:55] [INFO] Started team formation process
+[2026-01-21 00:33:07] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2026-01-21 00:33:07] [INFO] START: ParallelFileReadCallable with 4 threads
+[2026-01-21 00:33:07] [INFO] Thread-0 processing lines 0 to 25
+[2026-01-21 00:33:07] [INFO] Thread-1 processing lines 25 to 50
+[2026-01-21 00:33:07] [INFO] Thread-0 completed
+[2026-01-21 00:33:07] [INFO] Thread-1 completed
+[2026-01-21 00:33:07] [INFO] Thread-3 processing lines 75 to 100
+[2026-01-21 00:33:07] [INFO] Thread-2 processing lines 50 to 75
+[2026-01-21 00:33:07] [INFO] Thread-3 completed
+[2026-01-21 00:33:07] [INFO] Thread-2 completed
+[2026-01-21 00:33:07] [INFO] COMPLETED: CSV read in 17ms
+[2026-01-21 00:33:07] [INFO] Starting team formation with 100 participants
+[2026-01-21 00:33:07] [INFO] ============================================================
+[2026-01-21 00:33:07] [INFO] TEAM FORMATION START: 100 participants
+[2026-01-21 00:33:07] [INFO] Mode: SEQUENTIAL ONLY
+[2026-01-21 00:33:07] [INFO] ============================================================
+[2026-01-21 00:33:07] [INFO] ============================================================
+[2026-01-21 00:33:07] [INFO] TEAM FORMATION COMPLETE
+[2026-01-21 00:33:07] [INFO] Teams formed: 20
+[2026-01-21 00:33:07] [INFO] ============================================================
+[2026-01-21 00:33:07] [INFO] Team formation completed in 20ms
+[2026-01-21 00:33:07] [INFO] Teams are ready!
+[2026-01-21 00:33:10] [INFO] Viewing all teams
+[2026-01-21 00:33:36] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2026-01-21 00:33:36] [INFO] Application started by user
+[2026-01-21 00:33:38] [INFO] User selected Participant role
+[2026-01-21 00:33:38] [INFO] Entered Participant Menu
+[2026-01-21 00:33:39] [INFO] User selected: Register (Take Survey)
+[2026-01-21 00:33:39] [INFO] Started new participant registration
+[2026-01-21 00:34:00] [INFO] Personality survey started for participant: 2
+[2026-01-21 00:34:05] [INFO] Participant created: 2 (savinu)
+[2026-01-21 00:34:05] [INFO] Participant 2 saved to CSV
+[2026-01-21 00:34:08] [INFO] User exited Participant Menu
+[2026-01-21 00:34:09] [INFO] User selected Organizer role
+[2026-01-21 00:34:09] [INFO] Entered Organizer Menu
+[2026-01-21 00:34:10] [INFO] Started team formation process
+[2026-01-21 00:34:16] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2026-01-21 00:34:16] [INFO] START: ParallelFileReadCallable with 4 threads
+[2026-01-21 00:34:16] [INFO] Thread-0 processing lines 0 to 26
+[2026-01-21 00:34:16] [INFO] Thread-1 processing lines 26 to 52
+[2026-01-21 00:34:16] [INFO] Thread-0 completed
+[2026-01-21 00:34:16] [INFO] Thread-2 processing lines 52 to 78
+[2026-01-21 00:34:16] [INFO] Thread-1 completed
+[2026-01-21 00:34:16] [INFO] Thread-3 processing lines 78 to 101
+[2026-01-21 00:34:16] [INFO] Thread-2 completed
+[2026-01-21 00:34:16] [INFO] Thread-3 completed
+[2026-01-21 00:34:16] [INFO] COMPLETED: CSV read in 13ms
+[2026-01-21 00:34:16] [INFO] Starting team formation with 101 participants
+[2026-01-21 00:34:16] [INFO] ============================================================
+[2026-01-21 00:34:16] [INFO] TEAM FORMATION START: 101 participants
+[2026-01-21 00:34:16] [INFO] Mode: SEQUENTIAL ONLY
+[2026-01-21 00:34:16] [INFO] ============================================================
+[2026-01-21 00:34:16] [INFO] ============================================================
+[2026-01-21 00:34:16] [INFO] TEAM FORMATION COMPLETE
+[2026-01-21 00:34:16] [INFO] Teams formed: 21
+[2026-01-21 00:34:16] [INFO] ============================================================
+[2026-01-21 00:34:16] [INFO] Team formation completed in 21ms
+[2026-01-21 00:34:16] [INFO] Teams are ready!
+[2026-01-21 00:34:17] [INFO] Viewing all teams
+[2026-01-21 00:34:23] [INFO] Started participant removal process
+[2026-01-21 00:34:34] [INFO] Participant P091 removed successfully
+[2026-01-21 00:34:34] [INFO] CSV updated after participant removal
+[2026-01-21 00:34:34] [INFO] ============================================================
+[2026-01-21 00:34:34] [INFO] TEAM FORMATION START: 100 participants
+[2026-01-21 00:34:34] [INFO] Mode: SEQUENTIAL ONLY
+[2026-01-21 00:34:34] [INFO] ============================================================
+[2026-01-21 00:34:34] [INFO] ============================================================
+[2026-01-21 00:34:34] [INFO] TEAM FORMATION COMPLETE
+[2026-01-21 00:34:34] [INFO] Teams formed: 20
+[2026-01-21 00:34:34] [INFO] ============================================================
+[2026-01-21 00:34:34] [INFO] Teams reformed: 20 team(s)
+[2026-01-21 00:34:51] [INFO] Viewing all teams
+[2026-01-21 09:16:57] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2026-01-21 09:16:57] [INFO] Application started by user
+[2026-01-21 09:17:09] [INFO] User selected Participant role
+[2026-01-21 09:17:09] [INFO] Entered Participant Menu
+[2026-01-21 09:17:30] [INFO] User selected: Register (Take Survey)
+[2026-01-21 09:17:30] [INFO] Started new participant registration
+[2026-01-21 09:18:30] [INFO] Personality survey started for participant: P1001
+[2026-01-21 09:18:34] [INFO] Participant created: P1001 (Savinu)
+[2026-01-21 09:18:34] [INFO] Participant P1001 saved to CSV
+[2026-01-21 09:19:14] [INFO] User selected: Check My Team
+[2026-01-21 09:19:14] [INFO] User checking their team
+[2026-01-21 09:19:14] [WARNING] Teams not formed yet
+[2026-01-21 09:19:19] [INFO] User exited Participant Menu
+[2026-01-21 09:19:20] [INFO] User selected Organizer role
+[2026-01-21 09:19:20] [INFO] Entered Organizer Menu
+[2026-01-21 09:19:22] [INFO] Started team formation process
+[2026-01-21 09:20:13] [INFO] ParallelFileReadCallable: Reading CSV in parallel from: C:\Users\savinu\Desktop\RGU_second_year\CM2601\Project\CM2601_project\participants_sample.csv
+[2026-01-21 09:20:13] [INFO] START: ParallelFileReadCallable with 4 threads
+[2026-01-21 09:20:13] [INFO] Thread-1 processing lines 26 to 52
+[2026-01-21 09:20:13] [INFO] Thread-0 processing lines 0 to 26
+[2026-01-21 09:20:13] [INFO] Thread-1 completed
+[2026-01-21 09:20:13] [INFO] Thread-0 completed
+[2026-01-21 09:20:13] [INFO] Thread-2 processing lines 52 to 78
+[2026-01-21 09:20:13] [INFO] Thread-3 processing lines 78 to 101
+[2026-01-21 09:20:13] [INFO] Thread-2 completed
+[2026-01-21 09:20:13] [INFO] Thread-3 completed
+[2026-01-21 09:20:14] [INFO] COMPLETED: CSV read in 12ms
+[2026-01-21 09:20:14] [INFO] Starting team formation with 101 participants
+[2026-01-21 09:20:14] [INFO] ============================================================
+[2026-01-21 09:20:14] [INFO] TEAM FORMATION START: 101 participants
+[2026-01-21 09:20:14] [INFO] Mode: SEQUENTIAL ONLY
+[2026-01-21 09:20:14] [INFO] ============================================================
+[2026-01-21 09:20:14] [INFO] ============================================================
+[2026-01-21 09:20:14] [INFO] TEAM FORMATION COMPLETE
+[2026-01-21 09:20:14] [INFO] Teams formed: 21
+[2026-01-21 09:20:14] [INFO] ============================================================
+[2026-01-21 09:20:14] [INFO] Team formation completed in 28ms
+[2026-01-21 09:20:14] [INFO] Teams are ready!
+[2026-01-21 09:20:15] [INFO] Viewing all teams
+[2026-01-21 09:21:03] [INFO] User exited Organizer Menu
+[2026-01-21 09:21:05] [INFO] User selected Participant role
+[2026-01-21 09:21:05] [INFO] Entered Participant Menu
+[2026-01-21 09:21:07] [INFO] User selected: Check My Team
+[2026-01-21 09:21:07] [INFO] User checking their team
+[2026-01-21 09:21:13] [INFO] Team found for participant P001: Team 15
+[2026-01-21 09:21:39] [INFO] User exited Participant Menu
+[2026-01-21 09:21:41] [INFO] User selected Organizer role
+[2026-01-21 09:21:41] [INFO] Entered Organizer Menu
+[2026-01-21 09:21:51] [INFO] Started participant removal process
+[2026-01-21 09:21:55] [INFO] Participant P001 removed successfully
+[2026-01-21 09:21:55] [INFO] CSV updated after participant removal
+[2026-01-21 09:21:55] [INFO] ============================================================
+[2026-01-21 09:21:55] [INFO] TEAM FORMATION START: 100 participants
+[2026-01-21 09:21:55] [INFO] Mode: SEQUENTIAL ONLY
+[2026-01-21 09:21:55] [INFO] ============================================================
+[2026-01-21 09:21:55] [INFO] ============================================================
+[2026-01-21 09:21:55] [INFO] TEAM FORMATION COMPLETE
+[2026-01-21 09:21:55] [INFO] Teams formed: 20
+[2026-01-21 09:21:55] [INFO] ============================================================
+[2026-01-21 09:21:55] [INFO] Teams reformed: 20 team(s)
+[2026-01-21 09:22:21] [INFO] Started team export process
+[2026-01-21 09:22:26] [ERROR] Error in organizerMenu: CSV files must end with '.csv'.
+[2026-01-21 09:22:33] [INFO] Started team export process
+[2026-01-21 09:22:39] [INFO] Teams exported to: output.csv
+[2026-01-21 09:30:57] [INFO] ========== TEAM BUILDER APPLICATION STARTED ==========
+[2026-01-21 09:30:57] [INFO] Application started by user
+[2026-01-21 09:31:00] [INFO] User selected Participant role
+[2026-01-21 09:31:00] [INFO] Entered Participant Menu
+[2026-01-21 09:31:01] [INFO] User selected: Register (Take Survey)
+[2026-01-21 09:31:01] [INFO] Started new participant registration

@@ -17,7 +17,7 @@ public class InputValidator {
         while (true) {
             String email = getInput("Enter Email: ").trim();
             // Regex patter to validate the user email
-            if (email.matches("^[\\w.-]+@university\\.edu$")) {
+            if (email.matches("^[\\w.-]+@gmail\\.com$")) {
                 return email;
             }
             System.out.println("Invalid email. Only @university.edu addresses are allowed.");
